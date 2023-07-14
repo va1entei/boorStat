@@ -1,6 +1,8 @@
 import requests
 import urllib
 import time
+import sys
+import os
 
 #if time.localtime().tm_hour != 16:
 #    os._exit(0)
