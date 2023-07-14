@@ -1,0 +1,25 @@
+name: work in crone
+on:
+  schedule:
+    - cron:  '0 */8 * * *' 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        ref: ${{ github.head_ref }}
+    - name: Install apt
+      env:
+        COMMIT_MSG: |
+          addcommit
+          skip-checks: true
+      run: |
+          sudo python3 worker1.py ${{ secrets.BOT_TK }} ${{ secrets.CHAT_ID }}
+          sudo git config --global http.postBuffer 524288000
+          sudo git config --local user.email "${GITHUB_ACTOR}@gmail.com"
+          sudo git config --local user.name "${GITHUB_ACTOR}"
+          sudo git remote -v
+          sudo git add --all
+          sudo git commit -m "result works"
+          sudo git push "https://va1entei:${{ secrets.ACCESS_TOKEN }}@github.com/va1entei/boorStat.git" HEAD:main --force 
