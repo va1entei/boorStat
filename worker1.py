@@ -18,15 +18,15 @@ response = requests.get(URL)
 urlDownload = 'https://rgooboor.by/media/pages-files/'+str(response.content).split('https://rgooboor.by/media/pages-files/')[1].split('.xlsx?file=true')[0]+'.xlsx?file=true'
 fileDownload = urlDownload.split('?file=true')[0].split('/')[-1]
 response = requests.get(urlDownload)
-open(urllib.parse.unquote('./косуля европейская/'+fileDownload), "wb").write(response.content)
+open('./косуля европейская/'+urllib.parse.unquote(fileDownload), "wb").write(response.content)
 
 def telegram_bot_sendtext(bot_message,bot_token,bot_chatID):
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
     response = requests.get(send_text)
-telegram_bot_sendtext(fileDownload,bot_token,bot_chatID)
+telegram_bot_sendtext(urllib.parse.unquote(fileDownload),bot_token,bot_chatID)
 
 
-document = open('./косуля европейская/'+fileDownload, "rb")
+document = open('./косуля европейская/'+urllib.parse.unquote(fileDownload), "rb")
 url = f"https://api.telegram.org/bot"+bot_token+"/sendDocument"
 response = requests.post(url, data={'chat_id': bot_chatID}, files={'document': document})
 content = response.content.decode("utf8")
