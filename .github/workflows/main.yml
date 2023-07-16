@@ -16,7 +16,7 @@ jobs:
           addcommit
           skip-checks: true
       run: |
-          sudo python3 worker1.py ${{ secrets.BOT_TK }} ${{ secrets.CHAT_ID }}
+          python3 worker1.py ${{ secrets.BOT_TK }} ${{ secrets.CHAT_ID }}
           sudo git config --global http.postBuffer 524288000
           sudo git config --local user.email "${GITHUB_ACTOR}@gmail.com"
           sudo git config --local user.name "${GITHUB_ACTOR}"
