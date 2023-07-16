@@ -107,8 +107,8 @@ def sendDocument(bot_doc,bot_token,bot_chatID):
 sendDocument('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.html',bot_token,bot_chatID)
 
 
-os.system('pip3 install Pillow')
-os.system('pip3 install selenium')
+os.system('sudo pip3 install Pillow')
+os.system('sudo pip3 install selenium')
 
 import io
 from PIL import Image
