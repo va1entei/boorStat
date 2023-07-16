@@ -117,11 +117,19 @@ from PIL import Image
 
 img_data = world_map._to_png(5)
 img = Image.open(io.BytesIO(img_data))
-img.save('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.png')
+try:
+    img.save('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.png')
+except:
+    print('error selenium.common.exceptions.TimeoutException: Message: Failed to read marionette port')
 
 def sendImage(bot_image,bot_token,bot_chatID):
     url = "https://api.telegram.org/bot"+bot_token+"/sendPhoto";
     files = {'photo': open(bot_image, 'rb')}
     data = {'chat_id' : bot_chatID}
     r= requests.post(url, files=files, data=data)
-sendImage('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.png',bot_token,bot_chatID)
+if os.path.exists('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.png'):
+    sendImage('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.png',bot_token,bot_chatID)
+
+import datetime
+t = datetime.date.today()
+os.system('echo '+str(t.strftime('%d%m%Y'))+'>./косуля европейская/'+'tmp')
