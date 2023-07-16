@@ -96,22 +96,32 @@ for i in boorDict2:
                             )
     folium.CircleMarker(location = boorDict2[i], radius=int(boorDict0_1[i]), color='blue', fill =False).add_to(world_map)
     folium.CircleMarker(location = boorDict2[i], radius=int(boorDict1[i]), popup= popup_text, color='red', fill =True).add_to(world_map)
-import datetime
-t = datetime.date.today()
 
-world_map.save(str(t.strftime('%d%m%Y'))+".html")
+
+
+world_map.save('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.html')
+def sendDocument(bot_doc,bot_token,bot_chatID):
+    document = open(bot_doc, "rb")
+    url = f"https://api.telegram.org/bot"+bot_token+"/sendDocument"
+    response = requests.post(url, data={'chat_id': bot_chatID}, files={'document': document})
+sendDocument('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.html',bot_token,bot_chatID)
+
+
 os.system('apt-get install -y firefox')
 os.system('pip3 install selenium')
+os.system('mkdir /var/www/.cache')
+os.system('mkdir /var/www/.mozilla')
+
 import io
 from PIL import Image
 
 img_data = world_map._to_png(5)
 img = Image.open(io.BytesIO(img_data))
-img.save('image.png')
+img.save('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.png')
 
 def sendImage(bot_image,bot_token,bot_chatID):
     url = "https://api.telegram.org/bot"+bot_token+"/sendPhoto";
     files = {'photo': open(bot_image, 'rb')}
     data = {'chat_id' : bot_chatID}
     r= requests.post(url, files=files, data=data)
-sendImage('image.png',bot_token,bot_chatID)
+sendImage('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.png',bot_token,bot_chatID)
