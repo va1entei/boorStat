@@ -31,7 +31,7 @@ url = f"https://api.telegram.org/bot"+bot_token+"/sendDocument"
 response = requests.post(url, data={'chat_id': bot_chatID}, files={'document': document})
 content = response.content.decode("utf8")
 
-os.system('pip3 install pandas')
+os.system('apt-get install python3-pandas')
 import pandas as pd
 df = pd.read_excel('./косуля европейская/'+urllib.parse.unquote(fileDownload))
 boorDict1 = dict()
