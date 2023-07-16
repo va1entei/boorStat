@@ -107,10 +107,8 @@ def sendDocument(bot_doc,bot_token,bot_chatID):
 sendDocument('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.html',bot_token,bot_chatID)
 
 
-os.system('apt-get install -y firefox')
+os.system('pip3 install Pillow')
 os.system('pip3 install selenium')
-os.system('mkdir /var/www/.cache')
-os.system('mkdir /var/www/.mozilla')
 
 import io
 from PIL import Image
