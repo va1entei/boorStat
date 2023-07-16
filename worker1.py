@@ -113,9 +113,9 @@ os.system('pip3 install selenium')
 import io
 from PIL import Image
 
-img_data = world_map._to_png(5)
-img = Image.open(io.BytesIO(img_data))
 try:
+    img_data = world_map._to_png(5)
+    img = Image.open(io.BytesIO(img_data))
     img.save('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.png')
 except:
     print('error selenium.common.exceptions.TimeoutException: Message: Failed to read marionette port')
