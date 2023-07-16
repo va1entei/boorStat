@@ -31,7 +31,7 @@ url = f"https://api.telegram.org/bot"+bot_token+"/sendDocument"
 response = requests.post(url, data={'chat_id': bot_chatID}, files={'document': document})
 content = response.content.decode("utf8")
 
-os.system('pip install pandas')
+os.system('pip3 install pandas')
 import pandas as pd
 df = pd.read_excel('./косуля европейская/'+urllib.parse.unquote(fileDownload))
 boorDict1 = dict()
@@ -49,7 +49,7 @@ for i in range(18):
 for i in range(18):
     boorDict1['Республика Беларусь,'+df.values[123][0].split(' ')[1]+' область,'+df.values[126+i][0].strip()[:-2]+'ий район']=(df.values[126+i][1]-df.values[126+i][2])/cdv
 
-os.system('pip install folium')
+os.system('pip3 install folium')
 import time
 from geopy.geocoders import Nominatim
 import folium
@@ -100,7 +100,7 @@ t = datetime.date.today()
 
 world_map.save(str(t.strftime('%d%m%Y'))+".html")
 os.system('apt-get install -y firefox')
-os.system('pip install selenium')
+os.system('pip3 install selenium')
 import io
 from PIL import Image
 
