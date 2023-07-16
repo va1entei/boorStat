@@ -113,12 +113,9 @@ os.system('pip3 install selenium')
 import io
 from PIL import Image
 
-try:
-    img_data = world_map._to_png(5)
-    img = Image.open(io.BytesIO(img_data))
-    img.save('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.png')
-except:
-    print('error selenium.common.exceptions.TimeoutException: Message: Failed to read marionette port')
+img_data = world_map._to_png(5)
+img = Image.open(io.BytesIO(img_data))
+img.save('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.png')
 
 def sendImage(bot_image,bot_token,bot_chatID):
     url = "https://api.telegram.org/bot"+bot_token+"/sendPhoto";
