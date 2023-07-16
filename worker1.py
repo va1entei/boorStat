@@ -105,7 +105,7 @@ def sendDocument(bot_doc,bot_token,bot_chatID):
     url = f"https://api.telegram.org/bot"+bot_token+"/sendDocument"
     response = requests.post(url, data={'chat_id': bot_chatID}, files={'document': document})
 sendDocument('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.html',bot_token,bot_chatID)
-
+telegram_bot_sendtext('https://va1entei.github.io/boorStat/косуля европейская/'+urllib.parse.unquote(fileDownload)+'.html',bot_token,bot_chatID)
 
 os.system('sudo pip3 install Pillow')
 os.system('sudo pip3 install selenium')
