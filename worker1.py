@@ -23,7 +23,7 @@ open('./косуля европейская/'+urllib.parse.unquote(fileDownload)
 def telegram_bot_sendtext(bot_message,bot_token,bot_chatID):
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
     response = requests.get(send_text)
-telegram_bot_sendtext(str(time.localtime().tm_hour)+'  '+urllib.parse.unquote(fileDownload),bot_token,bot_chatID)
+telegram_bot_sendtext(str(time.localtime().tm_hour)+'  '+fileDownload,bot_token,bot_chatID)
 
 
 document = open('./косуля европейская/'+urllib.parse.unquote(fileDownload), "rb")
@@ -105,7 +105,7 @@ def sendDocument(bot_doc,bot_token,bot_chatID):
     url = f"https://api.telegram.org/bot"+bot_token+"/sendDocument"
     response = requests.post(url, data={'chat_id': bot_chatID}, files={'document': document})
 sendDocument('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.html',bot_token,bot_chatID)
-telegram_bot_sendtext('https://va1entei.github.io/boorStat/косуля европейская/'+urllib.parse.unquote(fileDownload)+'.html',bot_token,bot_chatID)
+#telegram_bot_sendtext('https://va1entei.github.io/boorStat/косуля европейская/'+fileDownload+'.html',bot_token,bot_chatID)
 
 os.system('sudo pip3 install Pillow')
 os.system('sudo pip3 install selenium')
