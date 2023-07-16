@@ -49,8 +49,8 @@ for i in range(18):
 for i in range(18):
     boorDict1['Республика Беларусь,'+df.values[123][0].split(' ')[1]+' область,'+df.values[126+i][0].strip()[:-2]+'ий район']=(df.values[126+i][1]-df.values[126+i][2])/cdv
 
-os.system('pip3 install folium')
-os.system('pip3 install geopy')
+os.system('sudo pip3 install folium')
+os.system('sudo pip3 install geopy')
 import time
 from geopy.geocoders import Nominatim
 import folium
@@ -127,4 +127,7 @@ if os.path.exists('./косуля европейская/'+urllib.parse.unquote(
 
 import datetime
 t = datetime.date.today()
-os.system('echo '+str(t.strftime('%d%m%Y'))+'> ./косуля европейская/tmp')
+
+f = open('./косуля европейская/tmp', 'w')
+f.write(str(t.strftime('%d%m%Y')))
+f.close()
