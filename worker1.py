@@ -131,7 +131,7 @@ import glob
 files = glob.glob(os.path.expanduser('./косуля европейская/*.xlsx'))
 sorted_by_mtime_descending = sorted(files, key=lambda t: -os.stat(t).st_mtime)
 
-df = pd.read_excel(sorted_by_mtime_descending[0])
+df = pd.read_excel(sorted_by_mtime_descending[1])
 boorDict3 = dict()
 cdv=5
 for i in range(16):
@@ -157,9 +157,9 @@ for i in boorDict2:
                             str(boorDict3[i])
                             )
     if boorDict3[i]==0:
-        folium.CircleMarker(location = boorDict2[i], radius=1, popup= popup_text, color='blue', fill =True).add_to(world_map)
+        folium.CircleMarker(location = boorDict2[i], radius=1, popup= popup_text, color='green', fill =True).add_to(world_map)
     elif boorDict3[i]<0:
-        folium.CircleMarker(location = boorDict2[i], radius=1, popup= popup_text, color='yelllow', fill =True).add_to(world_map)
+        folium.CircleMarker(location = boorDict2[i], radius=1, popup= popup_text, color='blue', fill =True).add_to(world_map)
     else:
         folium.CircleMarker(location = boorDict2[i], radius=boorDict3[i], popup= popup_text, color='red', fill =True).add_to(world_map)
     
