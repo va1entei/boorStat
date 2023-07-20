@@ -135,17 +135,17 @@ df = pd.read_excel(sorted_by_mtime_descending[1])
 boorDict3 = dict()
 cdv=5
 for i in range(16):
-    boorDict3['Республика Беларусь,'+df.values[2][0].split(' ')[1]+' область,'+df.values[5+i][0].strip()[:-2]+'ий район']=(df.values[5+i][1]-df.values[5+i][2])-cdv*boorDict1['Республика Беларусь,'+df.values[2][0].split(' ')[1]+' область,'+df.values[5+i][0].strip()[:-2]+'ий район']
+    boorDict3['Республика Беларусь,'+df.values[2][0].split(' ')[1]+' область,'+df.values[5+i][0].strip()[:-2]+'ий район']=cdv*boorDict1['Республика Беларусь,'+df.values[2][0].split(' ')[1]+' область,'+df.values[5+i][0].strip()[:-2]+'ий район']-(df.values[5+i][1]-df.values[5+i][2])
 for i in range(19):
-    boorDict3['Республика Беларусь,'+df.values[24][0].split(' ')[1]+' область,'+df.values[27+i][0].strip()[:-2]+'ий район']=(df.values[27+i][1]-df.values[27+i][2])-cdv*boorDict1['Республика Беларусь,'+df.values[24][0].split(' ')[1]+' область,'+df.values[27+i][0].strip()[:-2]+'ий район']
+    boorDict3['Республика Беларусь,'+df.values[24][0].split(' ')[1]+' область,'+df.values[27+i][0].strip()[:-2]+'ий район']=cdv*boorDict1['Республика Беларусь,'+df.values[24][0].split(' ')[1]+' область,'+df.values[27+i][0].strip()[:-2]+'ий район']-(df.values[27+i][1]-df.values[27+i][2])
 for i in range(21):
-    boorDict3['Республика Беларусь,'+df.values[49][0].split(' ')[1]+' область,'+df.values[52+i][0].strip()[:-2]+'ий район']=(df.values[52+i][1]-df.values[52+i][2])-cdv*boorDict1['Республика Беларусь,'+df.values[49][0].split(' ')[1]+' область,'+df.values[52+i][0].strip()[:-2]+'ий район']
+    boorDict3['Республика Беларусь,'+df.values[49][0].split(' ')[1]+' область,'+df.values[52+i][0].strip()[:-2]+'ий район']=cdv*boorDict1['Республика Беларусь,'+df.values[49][0].split(' ')[1]+' область,'+df.values[52+i][0].strip()[:-2]+'ий район']-(df.values[52+i][1]-df.values[52+i][2])
 for i in range(17):
-    boorDict3['Республика Беларусь,'+df.values[76][0].split(' ')[1]+' область,'+df.values[79+i][0].strip()[:-2]+'ий район']=(df.values[79+i][1]-df.values[79+i][2])-cdv*boorDict1['Республика Беларусь,'+df.values[76][0].split(' ')[1]+' область,'+df.values[79+i][0].strip()[:-2]+'ий район']
+    boorDict3['Республика Беларусь,'+df.values[76][0].split(' ')[1]+' область,'+df.values[79+i][0].strip()[:-2]+'ий район']=cdv*boorDict1['Республика Беларусь,'+df.values[76][0].split(' ')[1]+' область,'+df.values[79+i][0].strip()[:-2]+'ий район']-(df.values[79+i][1]-df.values[79+i][2])
 for i in range(18):
-    boorDict3['Республика Беларусь,'+df.values[99][0].split(' ')[1]+' область,'+df.values[102+i][0].strip()[:-2]+'ий район']=(df.values[102+i][1]-df.values[102+i][2])-cdv*boorDict1['Республика Беларусь,'+df.values[99][0].split(' ')[1]+' область,'+df.values[102+i][0].strip()[:-2]+'ий район']
+    boorDict3['Республика Беларусь,'+df.values[99][0].split(' ')[1]+' область,'+df.values[102+i][0].strip()[:-2]+'ий район']=cdv*boorDict1['Республика Беларусь,'+df.values[99][0].split(' ')[1]+' область,'+df.values[102+i][0].strip()[:-2]+'ий район']-(df.values[102+i][1]-df.values[102+i][2])
 for i in range(18):
-    boorDict3['Республика Беларусь,'+df.values[123][0].split(' ')[1]+' область,'+df.values[126+i][0].strip()[:-2]+'ий район']=(df.values[126+i][1]-df.values[126+i][2])-cdv*boorDict1['Республика Беларусь,'+df.values[123][0].split(' ')[1]+' область,'+df.values[126+i][0].strip()[:-2]+'ий район']
+    boorDict3['Республика Беларусь,'+df.values[123][0].split(' ')[1]+' область,'+df.values[126+i][0].strip()[:-2]+'ий район']=cdv*boorDict1['Республика Беларусь,'+df.values[123][0].split(' ')[1]+' область,'+df.values[126+i][0].strip()[:-2]+'ий район']-(df.values[126+i][1]-df.values[126+i][2])
 
 world_map= folium.Map(location=(53.8, 27),zoom_start=7)
 for i in boorDict2:
@@ -158,6 +158,8 @@ for i in boorDict2:
                             )
     if boorDict3[i]==0:
         folium.CircleMarker(location = boorDict2[i], radius=1, popup= popup_text, color='blue', fill =True).add_to(world_map)
+    elif boorDict3[3]<0:
+        folium.CircleMarker(location = boorDict2[i], radius=1, popup= popup_text, color='yelllow', fill =True).add_to(world_map)
     else:
         folium.CircleMarker(location = boorDict2[i], radius=boorDict3[i], popup= popup_text, color='red', fill =True).add_to(world_map)
     
