@@ -132,7 +132,7 @@ files = glob.glob(os.path.expanduser('./косуля европейская/*.xl
 sorted_by_mtime_descending = sorted(files, key=lambda t: -os.stat(t).st_mtime)
 print(sorted_by_mtime_descending)
 df = pd.read_excel(sorted_by_mtime_descending[1])
-boorDict2 = dict()
+boorDict3 = dict()
 cdv=5
 for i in range(16):
     boorDict3['Республика Беларусь,'+df.values[2][0].split(' ')[1]+' область,'+df.values[5+i][0].strip()[:-2]+'ий район']=(df.values[5+i][1]-df.values[5+i][2])-cdv*boorDict1['Республика Беларусь,'+df.values[2][0].split(' ')[1]+' область,'+df.values[5+i][0].strip()[:-2]+'ий район']
@@ -156,7 +156,12 @@ for i in boorDict2:
                             str(int(float(boorDict1[i])*cdv)),
                             str(boorDict3[i])
                             )
-    folium.CircleMarker(location = boorDict2[i], radius=boorDict3[i], popup= popup_text, color='red', fill =True).add_to(world_map)
+    if boorDict3[i]==0:
+        folium.CircleMarker(location = boorDict2[i], radius=1, popup= popup_text, color='blue', fill =True).add_to(world_map)
+    else:
+        folium.CircleMarker(location = boorDict2[i], radius=boorDict3[i], popup= popup_text, color='red', fill =True).add_to(world_map)
+    
+
 world_map.save('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.2.html')
 def sendDocument(bot_doc,bot_token,bot_chatID):
     document = open(bot_doc, "rb")
