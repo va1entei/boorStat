@@ -127,6 +127,7 @@ if os.path.exists('./косуля европейская/'+urllib.parse.unquote(
     sendImage('./косуля европейская/'+urllib.parse.unquote(fileDownload)+'.png',bot_token,bot_chatID)
 
 #step2
+import glob
 files = glob.glob(os.path.expanduser('./косуля европейская/*.xlsx'))
 sorted_by_mtime_descending = sorted(files, key=lambda t: -os.stat(t).st_mtime)
 print(sorted_by_mtime_descending)
