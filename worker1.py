@@ -130,8 +130,8 @@ if os.path.exists('./косуля европейская/'+urllib.parse.unquote(
 import glob
 files = glob.glob(os.path.expanduser('./косуля европейская/*.xlsx'))
 sorted_by_mtime_descending = sorted(files, key=lambda t: -os.stat(t).st_mtime)
-#0
-df = pd.read_excel(sorted_by_mtime_descending[1])
+
+df = pd.read_excel(sorted_by_mtime_descending[0])
 boorDict3 = dict()
 cdv=5
 for i in range(16):
