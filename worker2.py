@@ -48,6 +48,12 @@ boorDict0_deer = dict()
 
 boorDict1_roe = dict()
 boorDict0_roe = dict()
+
+def nz(val):
+    if str(val)=='nan':
+        return 0
+    else:
+        return float(val)
 import numpy as np
 cdv=5
 for i in df:
@@ -89,14 +95,14 @@ for i in df:
                 if 'start' in boorDict1_roe.keys():
                     boorDict0_roe[tsKey] = boorDict0_roe.pop('start')
         if j[1] == 'лось':
-            boorDict1_elk[tsKey] = (float(j[2])-float(j[3]))/cdv
-            boorDict0_elk[tsKey] = (float(j[2])-float(j[4])-float(j[7]))/cdv
+            boorDict1_elk[tsKey] = (nz(j[2])-nz(j[3]))/cdv
+            boorDict0_elk[tsKey] = (nz(j[2])-nz(j[4])-nz(j[7]))/cdv
         if j[1] == 'олень':
-            boorDict1_deer[tsKey] = (float(j[2])-float(j[3]))/cdv
-            boorDict0_deer[tsKey] = (float(j[2])-float(j[4])-float(j[7]))/cdv
+            boorDict1_deer[tsKey] = (nz(j[2])-nz(j[3]))/cdv
+            boorDict0_deer[tsKey] = (nz(j[2])-nz(j[4])-nz(j[7]))/cdv
         if j[1] == 'косуля':
-            boorDict1_roe[tsKey] = (float(j[2])-float(j[3]))/cdv
-            boorDict0_roe[tsKey] = (float(j[2])-float(j[4])-float(j[7]))/cdv
+            boorDict1_roe[tsKey] = (nz(j[2])-nz(j[3]))/cdv
+            boorDict0_roe[tsKey] = (nz(j[2])-nz(j[4])-nz(j[7]))/cdv
 
         if j[1] == 'бобр':
             tsKey = 'start'
