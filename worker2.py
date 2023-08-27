@@ -55,7 +55,7 @@ for i in df:
     X = np.insert(s2, 0,s1, axis=0)
     tsKey = 'start'
     for j in X:
-        if (str(j[1])=='nan' and str(j[2])=='nan' and str(j[3])=='nan' and str(j[4])=='nan' and str(j[5])=='nan' and str(j[6])=='nan') or (str(j[1]) in ['лось','олень','косуля']):
+        if (str(j[1])=='nan' and str(j[2])=='nan' and str(j[3])=='nan' and str(j[4])=='nan' and str(j[5])=='nan' and str(j[6])=='nan') or (str(j[1]) in ['лось','олень','косуля','пятнис']):
             if str(j[0]) != 'nan':
                 for l in boorDict2.keys():
                     if j[0][:-2]+'ий район' in l:
