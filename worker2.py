@@ -47,11 +47,14 @@ boorDict0_deer = dict()
 
 boorDict1_roe = dict()
 boorDict0_roe = dict()
-
+import numpy as np
 cdv=5
 for i in df:
+    s1 = i.keys().values
+    s2 = i.values
+    X = np.insert(s2, 0,s1, axis=0)
     tsKey = 'start'
-    for j in i.values:
+    for j in X:
         if (str(j[1])=='nan' and str(j[2])=='nan' and str(j[3])=='nan' and str(j[4])=='nan' and str(j[5])=='nan' and str(j[6])=='nan') or (str(j[1]) in ['лось','олень','косуля']):
             if str(j[0]) != 'nan':
                 for l in boorDict2.keys():
