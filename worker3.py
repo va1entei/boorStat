@@ -56,7 +56,7 @@ boorDict0_deer = dict()
 boorDict1_roe = dict()
 boorDict0_roe = dict()
 
-cdv=5
+cdv=1
 obl = ''
 ray = ''
 for i in df.values:
@@ -134,7 +134,7 @@ for i in boorDict2:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_deer[i]),popup= popup_text, color='green', fill =False).add_to(world_map)
     else:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_deer[i]),popup= popup_text, color='blue', fill =False).add_to(world_map)
-    if int(float(boorDict1_elk[i])*cdv) !=0:
+    if int(float(boorDict1_deer[i])*cdv) !=0:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict1_deer[i]), popup= popup_text, color='red', fill =True).add_to(world_map)
 world_map.save('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_deer.html')
 sendDocument('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_deer.html',bot_token,bot_chatID)
@@ -146,22 +146,22 @@ img.save('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_deer.png')
 if os.path.exists('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_deer.png'):
     sendImage('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_deer.png',bot_token,bot_chatID)
 
-
+cdv=5
 world_map= folium.Map(location=(53.8, 27),zoom_start=7)
 for i in boorDict2:
     popup_text = """{}<br>
               {}<br>
               {}<br>"""
     popup_text = popup_text.format(i.split('Республика Беларусь,')[1],
-                            str(int(float(boorDict0_roe[i])*cdv)),
-                            str(int(float(boorDict1_roe[i])*cdv))
+                            str(int(float(boorDict0_roe[i]))),
+                            str(int(float(boorDict1_roe[i])))
                             )
-    if int(float(boorDict1_roe[i])*cdv) ==0 or int(float(boorDict0_roe[i])*cdv)/int(float(boorDict1_roe[i])*cdv)>2:
-        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_roe[i]),popup= popup_text, color='green', fill =False).add_to(world_map)
+    if int(float(boorDict1_roe[i])) ==0 or int(float(boorDict0_roe[i]))/int(float(boorDict1_roe[i]))>2:
+        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_roe[i])/cdv,popup= popup_text, color='green', fill =False).add_to(world_map)
     else:
-        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_roe[i]),popup= popup_text, color='blue', fill =False).add_to(world_map)
-    if int(float(boorDict1_elk[i])*cdv) !=0:
-        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict1_roe[i]), popup= popup_text, color='red', fill =True).add_to(world_map)
+        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_roe[i])/cdv,popup= popup_text, color='blue', fill =False).add_to(world_map)
+    if int(float(boorDict1_roe[i])) !=0:
+        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict1_roe[i])/cdv, popup= popup_text, color='red', fill =True).add_to(world_map)
 world_map.save('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_roe.html')
 sendDocument('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_roe.html',bot_token,bot_chatID)
 
