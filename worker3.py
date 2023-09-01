@@ -103,7 +103,10 @@ for i in boorDict2:
                             str(int(float(boorDict1_elk[i])*cdv))
                             )
     if int(float(boorDict1_elk[i])*cdv) ==0 or int(float(boorDict0_elk[i])*cdv)/int(float(boorDict1_elk[i])*cdv)>2:
-        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_elk[i]),popup= popup_text, color='green', fill =False).add_to(world_map)
+        if int(float(boorDict0_elk[i])*cdv) ==0:
+            folium.CircleMarker(location = boorDict2[i], radius=0,popup= popup_text, color='black', fill =False).add_to(world_map)
+        else:
+            folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_elk[i]),popup= popup_text, color='green', fill =False).add_to(world_map)
     else:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_elk[i]),popup= popup_text, color='blue', fill =False).add_to(world_map)
     if int(float(boorDict1_elk[i])*cdv) !=0:
@@ -129,7 +132,10 @@ for i in boorDict2:
                             str(int(float(boorDict1_deer[i])*cdv))
                             )
     if int(float(boorDict1_deer[i])*cdv) ==0 or int(float(boorDict0_deer[i])*cdv)/int(float(boorDict1_deer[i])*cdv)>2:
-        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_deer[i]),popup= popup_text, color='green', fill =False).add_to(world_map)
+        if int(float(boorDict0_deer[i])*cdv) ==0:
+            folium.CircleMarker(location = boorDict2[i], radius=0,popup= popup_text, color='black', fill =False).add_to(world_map)
+        else:
+            folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_deer[i]),popup= popup_text, color='green', fill =False).add_to(world_map)
     else:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_deer[i]),popup= popup_text, color='blue', fill =False).add_to(world_map)
     if int(float(boorDict1_deer[i])*cdv) !=0:
@@ -155,7 +161,10 @@ for i in boorDict2:
                             str(int(float(boorDict1_roe[i])))
                             )
     if int(float(boorDict1_roe[i])) ==0 or int(float(boorDict0_roe[i]))/int(float(boorDict1_roe[i]))>2:
-        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_roe[i])/cdv,popup= popup_text, color='green', fill =False).add_to(world_map)
+        if int(float(boorDict0_roe[i])*cdv) ==0:
+            folium.CircleMarker(location = boorDict2[i], radius=0,popup= popup_text, color='black', fill =False).add_to(world_map)
+        else:
+            folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_roe[i])/cdv,popup= popup_text, color='green', fill =False).add_to(world_map)
     else:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_roe[i])/cdv,popup= popup_text, color='blue', fill =False).add_to(world_map)
     if int(float(boorDict1_roe[i])) !=0:
