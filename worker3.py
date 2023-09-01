@@ -32,9 +32,7 @@ response = requests.post(url, data={'chat_id': bot_chatID}, files={'document': d
 content = response.content.decode("utf8")
 os.system('sudo apt-get update')
 os.system('sudo apt-get install python3-pandas')
-os.system('sudo pip3 install tabula-py')
-import tabula
-df = tabula.read_pdf('./elk_deer_roe/'+urllib.parse.unquote(fileDownload), pages = "all")
+
 import pandas as pd
 df = pd.read_excel('./elk_deer_roe/'+urllib.parse.unquote(fileDownload))
 
