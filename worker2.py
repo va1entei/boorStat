@@ -167,7 +167,7 @@ for i in boorDict2:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_deer[i]),popup= popup_text, color='green', fill =False).add_to(world_map)
     else:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_deer[i]),popup= popup_text, color='blue', fill =False).add_to(world_map)
-    if int(float(boorDict1_elk[i])*cdv) !=0:
+    if int(float(boorDict1_deer[i])*cdv) !=0:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict1_deer[i]), popup= popup_text, color='red', fill =True).add_to(world_map)
 world_map.save('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_deer.html')
 sendDocument('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_deer.html',bot_token,bot_chatID)
@@ -193,7 +193,7 @@ for i in boorDict2:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_roe[i]),popup= popup_text, color='green', fill =False).add_to(world_map)
     else:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_roe[i]),popup= popup_text, color='blue', fill =False).add_to(world_map)
-    if int(float(boorDict1_elk[i])*cdv) !=0:
+    if int(float(boorDict1_roe[i])*cdv) !=0:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict1_roe[i]), popup= popup_text, color='red', fill =True).add_to(world_map)
 world_map.save('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_roe.html')
 sendDocument('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_roe.html',bot_token,bot_chatID)
