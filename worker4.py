@@ -18,13 +18,13 @@ strDate = datetime.datetime.now().strftime("_%d.%m.%Y.html")
 
 URL = "https://rgooboor.by/api/v1/pages/page/21/"
 response = requests.get(URL)
-with open("elk_deer_roe_html/elk_deer_roe"+strDate, "wb") as f:
+with open("elk_deer_roe/elk_deer_roe"+strDate, "wb") as f:
     f.write(response.content)
 
 def telegram_bot_sendtext(bot_message,bot_token,bot_chatID):
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
     response = requests.get(send_text)
-telegram_bot_sendtext('download html:'+"elk_deer_roe_html/elk_deer_roe"+strDate)
+telegram_bot_sendtext('download html:'+"elk_deer_roe/elk_deer_roe"+strDate)
 
 os.system('pip install html-table-parser-python3')
 os.system('sudo apt-get update')
