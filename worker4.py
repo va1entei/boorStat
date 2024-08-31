@@ -55,7 +55,6 @@ boorDict0_deer = dict()
 
 boorDict1_roe = dict()
 boorDict0_roe = dict()
-cdv=5
 
 for i in p.tables:
     tsKey = 'start'
@@ -118,6 +117,7 @@ os.system('sudo pip3 install Pillow')
 os.system('sudo pip3 install selenium')
 import io
 from PIL import Image
+cdv=5
 
 world_map= folium.Map(location=(53.8, 27),zoom_start=7)
 for i in boorDict2:
@@ -127,18 +127,18 @@ for i in boorDict2:
     if not i in boorDict0_elk.keys() or not i in boorDict1_elk.keys():
         continue
     popup_text = popup_text.format(i.split('Республика Беларусь,')[1],
-                            str(int(float(boorDict0_elk[i])*cdv)),
-                            str(int(float(boorDict1_elk[i])*cdv))
+                            str(int(float(boorDict0_elk[i]))),
+                            str(int(float(boorDict1_elk[i])))
                             )
     if int(float(boorDict1_elk[i])*cdv) ==0 or int(float(boorDict0_elk[i])*cdv)/int(float(boorDict1_elk[i])*cdv)>2:
         if int(float(boorDict0_elk[i])*cdv) ==0:
             folium.CircleMarker(location = boorDict2[i], radius=0,popup= popup_text, color='black', fill =False).add_to(world_map)
         else:
-            folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_elk[i]),popup= popup_text, color='green', fill =False).add_to(world_map)
+            folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_elk[i])/cdv,popup= popup_text, color='green', fill =False).add_to(world_map)
     else:
-        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_elk[i]),popup= popup_text, color='blue', fill =False).add_to(world_map)
+        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_elk[i])/cdv,popup= popup_text, color='blue', fill =False).add_to(world_map)
     if int(float(boorDict1_elk[i])*cdv) !=0:
-        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict1_elk[i]), popup= popup_text, color='red', fill =True).add_to(world_map)
+        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict1_elk[i])/cdv, popup= popup_text, color='red', fill =True).add_to(world_map)
 world_map.save('./elk_deer_roe/'+fileDownloadName+'_elk.html')
 sendDocument('./elk_deer_roe/'+fileDownloadName+'_elk.html',bot_token,bot_chatID)
 
@@ -149,6 +149,7 @@ img.save('./elk_deer_roe/'+fileDownloadName+'_elk.png')
 if os.path.exists('./elk_deer_roe/'+fileDownloadName+'_elk.png'):
     sendImage('./elk_deer_roe/'+fileDownloadName+'_elk.png',bot_token,bot_chatID)
 
+cdv=5
 
 world_map= folium.Map(location=(53.8, 27),zoom_start=7)
 for i in boorDict2:
@@ -158,18 +159,18 @@ for i in boorDict2:
     if not i in boorDict0_deer.keys() or not i in boorDict1_deer.keys():
         continue    
     popup_text = popup_text.format(i.split('Республика Беларусь,')[1],
-                            str(int(float(boorDict0_deer[i])*cdv)),
-                            str(int(float(boorDict1_deer[i])*cdv))
+                            str(int(float(boorDict0_deer[i]))),
+                            str(int(float(boorDict1_deer[i])))
                             )
     if int(float(boorDict1_deer[i])*cdv) ==0 or int(float(boorDict0_deer[i])*cdv)/int(float(boorDict1_deer[i])*cdv)>2:
         if int(float(boorDict0_deer[i])*cdv) ==0:
             folium.CircleMarker(location = boorDict2[i], radius=0,popup= popup_text, color='black', fill =False).add_to(world_map)
         else:
-            folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_deer[i]),popup= popup_text, color='green', fill =False).add_to(world_map)
+            folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_deer[i])/cdv,popup= popup_text, color='green', fill =False).add_to(world_map)
     else:
-        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_deer[i]),popup= popup_text, color='blue', fill =False).add_to(world_map)
+        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_deer[i])/cdv,popup= popup_text, color='blue', fill =False).add_to(world_map)
     if int(float(boorDict1_deer[i])*cdv) !=0:
-        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict1_deer[i]), popup= popup_text, color='red', fill =True).add_to(world_map)
+        folium.CircleMarker(location = boorDict2[i], radius=float(boorDict1_deer[i])/cdv, popup= popup_text, color='red', fill =True).add_to(world_map)
 world_map.save('./elk_deer_roe/'+fileDownloadName+'_deer.html')
 sendDocument('./elk_deer_roe/'+fileDownloadName+'_deer.html',bot_token,bot_chatID)
 
