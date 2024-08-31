@@ -55,7 +55,7 @@ boorDict0_deer = dict()
 
 boorDict1_roe = dict()
 boorDict0_roe = dict()
-cdv=1
+cdv=5
 
 for i in p.tables:
     tsKey = 'start'
@@ -79,7 +79,7 @@ for i in p.tables:
             else:
                 if j[0] == '\\r\\n олень \\r\\n':
                     try:
-                        boorDict0_deer = int(j[2].split(' ')[1])
+                        boorDict0_deer[tsKey] = int(j[2].split(' ')[1])
                     except:
                         boorDict0_deer[tsKey] = 0
                     try:
