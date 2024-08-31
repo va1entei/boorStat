@@ -27,6 +27,7 @@ def telegram_bot_sendtext(bot_message,bot_token,bot_chatID):
 telegram_bot_sendtext('download html:'+"elk_deer_roe/elk_deer_roe"+strDate,bot_token,bot_chatID)
 
 os.system('pip install html-table-parser-python3')
+os.system('pip3 install html-table-parser-python3')
 os.system('sudo apt-get update')
 os.system('sudo apt-get install python3-pandas')
 
