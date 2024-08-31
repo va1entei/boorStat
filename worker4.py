@@ -117,7 +117,7 @@ os.system('sudo pip3 install Pillow')
 os.system('sudo pip3 install selenium')
 import io
 from PIL import Image
-cdv=5
+cdv=2
 
 world_map= folium.Map(location=(53.8, 27),zoom_start=7)
 for i in boorDict2:
@@ -149,7 +149,7 @@ img.save('./elk_deer_roe/'+fileDownloadName+'_elk.png')
 if os.path.exists('./elk_deer_roe/'+fileDownloadName+'_elk.png'):
     sendImage('./elk_deer_roe/'+fileDownloadName+'_elk.png',bot_token,bot_chatID)
 
-cdv=5
+cdv=2
 
 world_map= folium.Map(location=(53.8, 27),zoom_start=7)
 for i in boorDict2:
