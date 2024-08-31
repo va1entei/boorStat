@@ -122,6 +122,8 @@ for i in boorDict2:
     popup_text = """{}<br>
               {}<br>
               {}<br>"""
+    if not i in boorDict0_elk.keys() or not i in boorDict1_elk.keys():
+        continue
     popup_text = popup_text.format(i.split('Республика Беларусь,')[1],
                             str(int(float(boorDict0_elk[i])*cdv)),
                             str(int(float(boorDict1_elk[i])*cdv))
@@ -151,6 +153,8 @@ for i in boorDict2:
     popup_text = """{}<br>
               {}<br>
               {}<br>"""
+    if not i in boorDict0_deer.keys() or not i in boorDict1_deer.keys():
+        continue    
     popup_text = popup_text.format(i.split('Республика Беларусь,')[1],
                             str(int(float(boorDict0_deer[i])*cdv)),
                             str(int(float(boorDict1_deer[i])*cdv))
@@ -180,6 +184,8 @@ for i in boorDict2:
     popup_text = """{}<br>
               {}<br>
               {}<br>"""
+    if not i in boorDict0_roe.keys() or not i in boorDict1_roe.keys():
+        continue    
     popup_text = popup_text.format(i.split('Республика Беларусь,')[1],
                             str(int(float(boorDict0_roe[i]))),
                             str(int(float(boorDict1_roe[i])))
