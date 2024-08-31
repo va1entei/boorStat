@@ -54,6 +54,8 @@ boorDict0_deer = dict()
 
 boorDict1_roe = dict()
 boorDict0_roe = dict()
+cdv=1
+
 for i in p.tables:
     tsKey = 'start'
     for j in i:
