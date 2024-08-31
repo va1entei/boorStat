@@ -14,17 +14,18 @@ except IndexError:
     os._exit(0)
 
 import datetime
-strDate = datetime.datetime.now().strftime("_%d.%m.%Y.html")
+strDate = datetime.datetime.now().strftime("_%d.%m.%Y")
 
 URL = "https://rgooboor.by/api/v1/pages/page/21/"
 response = requests.get(URL)
-with open("elk_deer_roe/elk_deer_roe"+strDate, "wb") as f:
+fileDownloadName = "elk_deer_roe"+strDate
+with open('elk_deer_roe/'+fileDownloadName+'.html', "wb") as f:
     f.write(response.content)
 
 def telegram_bot_sendtext(bot_message,bot_token,bot_chatID):
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
     response = requests.get(send_text)
-telegram_bot_sendtext('download html:'+"elk_deer_roe/elk_deer_roe"+strDate,bot_token,bot_chatID)
+telegram_bot_sendtext('download html: '+fileDownloadName+'.html',bot_token,bot_chatID)
 
 os.system('sudo pip3 install html-table-parser-python3')
 os.system('sudo apt-get update')
@@ -137,15 +138,15 @@ for i in boorDict2:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_elk[i]),popup= popup_text, color='blue', fill =False).add_to(world_map)
     if int(float(boorDict1_elk[i])*cdv) !=0:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict1_elk[i]), popup= popup_text, color='red', fill =True).add_to(world_map)
-world_map.save('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_elk.html')
-sendDocument('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_elk.html',bot_token,bot_chatID)
+world_map.save('./elk_deer_roe/'+fileDownloadName+'_elk.html')
+sendDocument('./elk_deer_roe/'+fileDownloadName+'_elk.html',bot_token,bot_chatID)
 
 img_data = world_map._to_png(5)
 img = Image.open(io.BytesIO(img_data))
-img.save('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_elk.png')
+img.save('./elk_deer_roe/'+fileDownloadName+'_elk.png')
 
-if os.path.exists('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_elk.png'):
-    sendImage('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_elk.png',bot_token,bot_chatID)
+if os.path.exists('./elk_deer_roe/'+fileDownloadName+'_elk.png'):
+    sendImage('./elk_deer_roe/'+fileDownloadName+'_elk.png',bot_token,bot_chatID)
 
 
 world_map= folium.Map(location=(53.8, 27),zoom_start=7)
@@ -168,15 +169,15 @@ for i in boorDict2:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_deer[i]),popup= popup_text, color='blue', fill =False).add_to(world_map)
     if int(float(boorDict1_deer[i])*cdv) !=0:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict1_deer[i]), popup= popup_text, color='red', fill =True).add_to(world_map)
-world_map.save('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_deer.html')
-sendDocument('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_deer.html',bot_token,bot_chatID)
+world_map.save('./elk_deer_roe/'+fileDownloadName+'_deer.html')
+sendDocument('./elk_deer_roe/'+fileDownloadName+'_deer.html',bot_token,bot_chatID)
 
 img_data = world_map._to_png(5)
 img = Image.open(io.BytesIO(img_data))
-img.save('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_deer.png')
+img.save('./elk_deer_roe/'+fileDownloadName+'_deer.png')
 
-if os.path.exists('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_deer.png'):
-    sendImage('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_deer.png',bot_token,bot_chatID)
+if os.path.exists('./elk_deer_roe/'+fileDownloadName+'_deer.png'):
+    sendImage('./elk_deer_roe/'+fileDownloadName+'_deer.png',bot_token,bot_chatID)
 
 cdv=5
 world_map= folium.Map(location=(53.8, 27),zoom_start=7)
@@ -199,15 +200,15 @@ for i in boorDict2:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict0_roe[i])/cdv,popup= popup_text, color='blue', fill =False).add_to(world_map)
     if int(float(boorDict1_roe[i])) !=0:
         folium.CircleMarker(location = boorDict2[i], radius=float(boorDict1_roe[i])/cdv, popup= popup_text, color='red', fill =True).add_to(world_map)
-world_map.save('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_roe.html')
-sendDocument('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_roe.html',bot_token,bot_chatID)
+world_map.save('./elk_deer_roe/'+fileDownloadName+'_roe.html')
+sendDocument('./elk_deer_roe/'+fileDownloadName+'_roe.html',bot_token,bot_chatID)
 
 img_data = world_map._to_png(5)
 img = Image.open(io.BytesIO(img_data))
-img.save('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_roe.png')
+img.save('./elk_deer_roe/'+fileDownloadName+'_roe.png')
 
-if os.path.exists('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_roe.png'):
-    sendImage('./elk_deer_roe/'+urllib.parse.unquote(fileDownload)+'_roe.png',bot_token,bot_chatID)
+if os.path.exists('./elk_deer_roe/'+fileDownloadName+'_roe.png'):
+    sendImage('./elk_deer_roe/'+fileDownloadName+'_roe.png',bot_token,bot_chatID)
 
 
 
