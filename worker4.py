@@ -66,7 +66,7 @@ for i in p.tables:
                         tmpSplit = j[0].split(' ')[1][:-2]
                     except:
                         print(j)
-                        1/0
+                        continue
                     if len(tmpSplit)<4: #олень бобр
                         continue
                     if tmpSplit in l :
