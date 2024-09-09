@@ -62,7 +62,11 @@ for i in p.tables:
         if tsKey == 'start':
         
             for l in boorDict2.keys():
-                    tmpSplit = j[0].split(' ')[1][:-2]
+                    try:
+                        tmpSplit = j[0].split(' ')[1][:-2]
+                    except:
+                        print(j)
+                        1/0
                     if len(tmpSplit)<4: #олень бобр
                         continue
                     if tmpSplit in l :
