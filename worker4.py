@@ -224,5 +224,22 @@ t = datetime.date.today()
 f = open('./elk_deer_roe/tmp', 'w')
 f.write(str(t.strftime('%d%m%Y')))
 f.close()
-
+import pickle 
+def saveDict(nameFileP,dictP):
+    with open(nameFileP, 'wb') as f:
+        pickle.dump(dictP, f)
+def readSaveDict(nameFileP):
+    if os.path.exists(nameFileP):
+        with open(nameFileP, 'rb') as f:
+            loadDict = pickle.load(f)
+        return loadDict
+    else:
+        return dict()
+strDate = str(t.strftime('%d%m%Y'))
+saveDict('./elk_deer_roe/boorDict1_elk_'+strDate+'.pkl',boorDict1_elk)
+saveDict('./elk_deer_roe/boorDict0_elk_'+strDate+'.pkl',boorDict0_elk)
+saveDict('./elk_deer_roe/boorDict1_deer_'+strDate+'.pkl',boorDict1_deer)
+saveDict('./elk_deer_roe/boorDict0_deer_'+strDate+'.pkl',boorDict0_deer)
+saveDict('./elk_deer_roe/boorDict1_roe_'+strDate+'.pkl',boorDict1_roe)
+saveDict('./elk_deer_roe/boorDict0_roe_'+strDate+'.pkl',boorDict0_roe)
 
