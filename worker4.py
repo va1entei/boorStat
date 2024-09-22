@@ -236,10 +236,12 @@ def readSaveDict(nameFileP):
     else:
         return dict()
 strDate = str(t.strftime('%d%m%Y'))
-saveDict('./elk_deer_roe/boorDict1_elk_'+strDate+'.pkl',boorDict1_elk)
-saveDict('./elk_deer_roe/boorDict0_elk_'+strDate+'.pkl',boorDict0_elk)
-saveDict('./elk_deer_roe/boorDict1_deer_'+strDate+'.pkl',boorDict1_deer)
-saveDict('./elk_deer_roe/boorDict0_deer_'+strDate+'.pkl',boorDict0_deer)
-saveDict('./elk_deer_roe/boorDict1_roe_'+strDate+'.pkl',boorDict1_roe)
-saveDict('./elk_deer_roe/boorDict0_roe_'+strDate+'.pkl',boorDict0_roe)
+allBoorDict={'boorDict0_elk':boorDict0_elk, 'boorDict1_elk':boorDict1_elk, 'boorDict0_deer':boorDict0_deer, 'boorDict1_deer':boorDict1_deer, 'boorDict0_roe':boorDict0_roe, 'boorDict1_roe':boorDict1_roe,}
+#saveDict('./elk_deer_roe/boorDict1_elk_'+strDate+'.pkl',boorDict1_elk)
+#saveDict('./elk_deer_roe/boorDict0_elk_'+strDate+'.pkl',boorDict0_elk)
+#saveDict('./elk_deer_roe/boorDict1_deer_'+strDate+'.pkl',boorDict1_deer)
+#saveDict('./elk_deer_roe/boorDict0_deer_'+strDate+'.pkl',boorDict0_deer)
+#saveDict('./elk_deer_roe/boorDict1_roe_'+strDate+'.pkl',boorDict1_roe)
+#saveDict('./elk_deer_roe/boorDict0_roe_'+strDate+'.pkl',boorDict0_roe)
+saveDict('./elk_deer_roe/allBoorDict_'+strDate+'.pkl',allBoorDict)
 
