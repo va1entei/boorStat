@@ -1,0 +1,2802 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9edf1651ce19f193310e34d27f8244c9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9edf1651ce19f193310e34d27f8244c9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9edf1651ce19f193310e34d27f8244c9 = L.map(
+                "map_9edf1651ce19f193310e34d27f8244c9",
+                {
+                    center: [53.8, 27.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0d3608b0b63ead2074acbcba0fcb593a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0d3608b0b63ead2074acbcba0fcb593a.addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+            var circle_marker_8d2778831f69ab85bf6d7e79532ecf0b = L.circleMarker(
+                [53.11770545, 25.752655900300613],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_c8ed0db2f19add9e4f1c740a00a2e4e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c89fde40b7f45114344121bc997eefb = $(`<div id="html_0c89fde40b7f45114344121bc997eefb" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Барановичский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_c8ed0db2f19add9e4f1c740a00a2e4e6.setContent(html_0c89fde40b7f45114344121bc997eefb);
+            
+        
+
+        circle_marker_8d2778831f69ab85bf6d7e79532ecf0b.bindPopup(popup_c8ed0db2f19add9e4f1c740a00a2e4e6)
+        ;
+
+        
+    
+    
+            var circle_marker_221c64627f37a2d8cf91f0ca49c84024 = L.circleMarker(
+                [52.49361655, 25.019739603959973],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_50e00f6df91bb5501c969e5db37a50c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee5af04a0839e7b5e3fa93fde61d0954 = $(`<div id="html_ee5af04a0839e7b5e3fa93fde61d0954" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Березовский район<br>                 3<br>                 3<br></div>`)[0];
+                popup_50e00f6df91bb5501c969e5db37a50c5.setContent(html_ee5af04a0839e7b5e3fa93fde61d0954);
+            
+        
+
+        circle_marker_221c64627f37a2d8cf91f0ca49c84024.bindPopup(popup_50e00f6df91bb5501c969e5db37a50c5)
+        ;
+
+        
+    
+    
+            var circle_marker_2fe215466bf16306c6990998ac36e9fa = L.circleMarker(
+                [52.49361655, 25.019739603959973],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_e449cffca1e74ae5794b9d051ace169a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8dd9d1604dacca2e2fdcdb9d6ba8c43 = $(`<div id="html_c8dd9d1604dacca2e2fdcdb9d6ba8c43" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Березовский район<br>                 3<br>                 3<br></div>`)[0];
+                popup_e449cffca1e74ae5794b9d051ace169a.setContent(html_c8dd9d1604dacca2e2fdcdb9d6ba8c43);
+            
+        
+
+        circle_marker_2fe215466bf16306c6990998ac36e9fa.bindPopup(popup_e449cffca1e74ae5794b9d051ace169a)
+        ;
+
+        
+    
+    
+            var circle_marker_f5b2915c641f92ec25897f5cec7a6891 = L.circleMarker(
+                [51.91627955, 23.76723870953012],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_be93076afa3fa305f78fb6bece0571e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_195b76b37a6a7acc655b8d4a872a631d = $(`<div id="html_195b76b37a6a7acc655b8d4a872a631d" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Брестский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_be93076afa3fa305f78fb6bece0571e4.setContent(html_195b76b37a6a7acc655b8d4a872a631d);
+            
+        
+
+        circle_marker_f5b2915c641f92ec25897f5cec7a6891.bindPopup(popup_be93076afa3fa305f78fb6bece0571e4)
+        ;
+
+        
+    
+    
+            var circle_marker_be36e6dee428038691965965bf6368a3 = L.circleMarker(
+                [52.67678885, 26.449531422332704],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_d59f8ab86480a95ea1d9a6e3c3dc8439 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_940efbfbdf96e15980b2bc81e98d0711 = $(`<div id="html_940efbfbdf96e15980b2bc81e98d0711" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Ганцевичский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_d59f8ab86480a95ea1d9a6e3c3dc8439.setContent(html_940efbfbdf96e15980b2bc81e98d0711);
+            
+        
+
+        circle_marker_be36e6dee428038691965965bf6368a3.bindPopup(popup_d59f8ab86480a95ea1d9a6e3c3dc8439)
+        ;
+
+        
+    
+    
+            var circle_marker_f15777b95dcaa1aff80c5a4b3be95f71 = L.circleMarker(
+                [52.146339499999996, 25.049494325000012],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_fe42270fc5a507425ec522bec0b921e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9aa6dd2a0e93ee1c13925979a270424c = $(`<div id="html_9aa6dd2a0e93ee1c13925979a270424c" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Дрогичинский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_fe42270fc5a507425ec522bec0b921e1.setContent(html_9aa6dd2a0e93ee1c13925979a270424c);
+            
+        
+
+        circle_marker_f15777b95dcaa1aff80c5a4b3be95f71.bindPopup(popup_fe42270fc5a507425ec522bec0b921e1)
+        ;
+
+        
+    
+    
+            var circle_marker_71b657fec9e302c04e5849076261143b = L.circleMarker(
+                [52.18807425, 24.046145782276106],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_205c932c7fb8b55ce1e508ef16b4b610 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_728b0ed6fe79ba69f7d08b6f52006f45 = $(`<div id="html_728b0ed6fe79ba69f7d08b6f52006f45" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Жабинковский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_205c932c7fb8b55ce1e508ef16b4b610.setContent(html_728b0ed6fe79ba69f7d08b6f52006f45);
+            
+        
+
+        circle_marker_71b657fec9e302c04e5849076261143b.bindPopup(popup_205c932c7fb8b55ce1e508ef16b4b610)
+        ;
+
+        
+    
+    
+            var circle_marker_2be3fa0b8d0b67797e40cdde1daedb67 = L.circleMarker(
+                [52.1919932, 25.58223031998437],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_f09dbdfcbd8bedce0e8b32bcae13ed66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45128670c20cd47a4fe57734125f9b71 = $(`<div id="html_45128670c20cd47a4fe57734125f9b71" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Ивановский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_f09dbdfcbd8bedce0e8b32bcae13ed66.setContent(html_45128670c20cd47a4fe57734125f9b71);
+            
+        
+
+        circle_marker_2be3fa0b8d0b67797e40cdde1daedb67.bindPopup(popup_f09dbdfcbd8bedce0e8b32bcae13ed66)
+        ;
+
+        
+    
+    
+            var circle_marker_97bf74c5e1d2d74edbeb7ff5188bd5a1 = L.circleMarker(
+                [52.6945606, 25.44150811706495],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_6ba839a80d9753a4503c4afc0ec1dd46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3142b765fe17b6af6ed5657e3f887611 = $(`<div id="html_3142b765fe17b6af6ed5657e3f887611" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Ивацевичский район<br>                 7<br>                 7<br></div>`)[0];
+                popup_6ba839a80d9753a4503c4afc0ec1dd46.setContent(html_3142b765fe17b6af6ed5657e3f887611);
+            
+        
+
+        circle_marker_97bf74c5e1d2d74edbeb7ff5188bd5a1.bindPopup(popup_6ba839a80d9753a4503c4afc0ec1dd46)
+        ;
+
+        
+    
+    
+            var circle_marker_f915efeb63d8217ad64cfa320e2027cf = L.circleMarker(
+                [52.6945606, 25.44150811706495],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_9327e9b04de6437a3bc590d1e2aecabc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aaf455a663fb90c4f97a2cb3d2242666 = $(`<div id="html_aaf455a663fb90c4f97a2cb3d2242666" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Ивацевичский район<br>                 7<br>                 7<br></div>`)[0];
+                popup_9327e9b04de6437a3bc590d1e2aecabc.setContent(html_aaf455a663fb90c4f97a2cb3d2242666);
+            
+        
+
+        circle_marker_f915efeb63d8217ad64cfa320e2027cf.bindPopup(popup_9327e9b04de6437a3bc590d1e2aecabc)
+        ;
+
+        
+    
+    
+            var circle_marker_62f76733411f0c0db8c41419f386ca0b = L.circleMarker(
+                [52.41572345, 23.690001226573123],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_eda7ef90f2d4e8b76df77bf8530204af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3757a16fa597b81621a13ed20fcf794b = $(`<div id="html_3757a16fa597b81621a13ed20fcf794b" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Каменецкий район<br>                 0<br>                 0<br></div>`)[0];
+                popup_eda7ef90f2d4e8b76df77bf8530204af.setContent(html_3757a16fa597b81621a13ed20fcf794b);
+            
+        
+
+        circle_marker_62f76733411f0c0db8c41419f386ca0b.bindPopup(popup_eda7ef90f2d4e8b76df77bf8530204af)
+        ;
+
+        
+    
+    
+            var circle_marker_b2d8ab50368c893c9ab3dbbedaf03288 = L.circleMarker(
+                [52.1548455, 24.49041329017848],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_95e0089fe9d39ed2844df2f5d377e944 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6936fc6975064b17653017a92b253140 = $(`<div id="html_6936fc6975064b17653017a92b253140" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Кобринский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_95e0089fe9d39ed2844df2f5d377e944.setContent(html_6936fc6975064b17653017a92b253140);
+            
+        
+
+        circle_marker_b2d8ab50368c893c9ab3dbbedaf03288.bindPopup(popup_95e0089fe9d39ed2844df2f5d377e944)
+        ;
+
+        
+    
+    
+            var circle_marker_89c8783da39361c0f4add3a3991104aa = L.circleMarker(
+                [52.410677250000006, 26.82391163408228],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_3d4c40fffd4009eecdfbf59062fedf4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e0f584ac1b808c57801be383f16f83e = $(`<div id="html_8e0f584ac1b808c57801be383f16f83e" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Лунинецкий район<br>                 0<br>                 0<br></div>`)[0];
+                popup_3d4c40fffd4009eecdfbf59062fedf4a.setContent(html_8e0f584ac1b808c57801be383f16f83e);
+            
+        
+
+        circle_marker_89c8783da39361c0f4add3a3991104aa.bindPopup(popup_3d4c40fffd4009eecdfbf59062fedf4a)
+        ;
+
+        
+    
+    
+            var circle_marker_8d0cd1edfa6484e867b785aa1f818cc6 = L.circleMarker(
+                [52.9052202, 26.17926608115756],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_b92b9a291bea2c5b13988add9bdd4acd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_174f9a923c3597b43589ff396cd6a8a8 = $(`<div id="html_174f9a923c3597b43589ff396cd6a8a8" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Ляховичский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_b92b9a291bea2c5b13988add9bdd4acd.setContent(html_174f9a923c3597b43589ff396cd6a8a8);
+            
+        
+
+        circle_marker_8d0cd1edfa6484e867b785aa1f818cc6.bindPopup(popup_b92b9a291bea2c5b13988add9bdd4acd)
+        ;
+
+        
+    
+    
+            var circle_marker_1719862df2346b1a494bb6410c0018eb = L.circleMarker(
+                [51.8164237, 24.088071043516383],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_cc1934cc9b9775a7b257d289cb7156b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_387aa1b62fd70469ff3b470e4bb7bec4 = $(`<div id="html_387aa1b62fd70469ff3b470e4bb7bec4" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Малоритский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_cc1934cc9b9775a7b257d289cb7156b2.setContent(html_387aa1b62fd70469ff3b470e4bb7bec4);
+            
+        
+
+        circle_marker_1719862df2346b1a494bb6410c0018eb.bindPopup(popup_cc1934cc9b9775a7b257d289cb7156b2)
+        ;
+
+        
+    
+    
+            var circle_marker_18593386246ccaefb767dd3503b65e90 = L.circleMarker(
+                [51.8164237, 24.088071043516383],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_c2f3897af00cadba1ef98c53c64b5f07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c9811a1edaffdbe795f08bc6f4ab662 = $(`<div id="html_2c9811a1edaffdbe795f08bc6f4ab662" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Малоритский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_c2f3897af00cadba1ef98c53c64b5f07.setContent(html_2c9811a1edaffdbe795f08bc6f4ab662);
+            
+        
+
+        circle_marker_18593386246ccaefb767dd3503b65e90.bindPopup(popup_c2f3897af00cadba1ef98c53c64b5f07)
+        ;
+
+        
+    
+    
+            var circle_marker_21a0655f1550db987955cf7b7597229b = L.circleMarker(
+                [52.202316249999996, 26.188169751509108],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_6d545e99e05fe58cf75666bbe48f6ca5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a880dbdeb97e5ed7e009323f9858b84 = $(`<div id="html_6a880dbdeb97e5ed7e009323f9858b84" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Пинский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_6d545e99e05fe58cf75666bbe48f6ca5.setContent(html_6a880dbdeb97e5ed7e009323f9858b84);
+            
+        
+
+        circle_marker_21a0655f1550db987955cf7b7597229b.bindPopup(popup_6d545e99e05fe58cf75666bbe48f6ca5)
+        ;
+
+        
+    
+    
+            var circle_marker_aab9c2d8ae64ce750b155bd8c5a9394c = L.circleMarker(
+                [52.67508455, 24.30407142611543],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_6cf96e4b7c5c4ed33816edad2cd8f00c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bfbf55808d22ce7ea5ba166bc82eccb = $(`<div id="html_2bfbf55808d22ce7ea5ba166bc82eccb" style="width: 100.0%; height: 100.0%;">БРЕСТСКАЯ область,Пружанский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_6cf96e4b7c5c4ed33816edad2cd8f00c.setContent(html_2bfbf55808d22ce7ea5ba166bc82eccb);
+            
+        
+
+        circle_marker_aab9c2d8ae64ce750b155bd8c5a9394c.bindPopup(popup_6cf96e4b7c5c4ed33816edad2cd8f00c)
+        ;
+
+        
+    
+    
+            var circle_marker_d540f24a1c28dd9001181c7aff2d596d = L.circleMarker(
+                [55.0658045, 29.75767765099469],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_7814b42375e99241ed03fc59855606a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_148c319ca69f6471fe617a81e5adaf6c = $(`<div id="html_148c319ca69f6471fe617a81e5adaf6c" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Бешенковичский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_7814b42375e99241ed03fc59855606a9.setContent(html_148c319ca69f6471fe617a81e5adaf6c);
+            
+        
+
+        circle_marker_d540f24a1c28dd9001181c7aff2d596d.bindPopup(popup_7814b42375e99241ed03fc59855606a9)
+        ;
+
+        
+    
+    
+            var circle_marker_0fd20b719c6faec27fdef736d0d55558 = L.circleMarker(
+                [55.2631965, 30.345114454839155],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_0a7d27c95dbace1fe1e34aa99c944702 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af0579489f63bf6ca1b8b5baeb55c6a2 = $(`<div id="html_af0579489f63bf6ca1b8b5baeb55c6a2" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Витебский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_0a7d27c95dbace1fe1e34aa99c944702.setContent(html_af0579489f63bf6ca1b8b5baeb55c6a2);
+            
+        
+
+        circle_marker_0fd20b719c6faec27fdef736d0d55558.bindPopup(popup_0a7d27c95dbace1fe1e34aa99c944702)
+        ;
+
+        
+    
+    
+            var circle_marker_3005210ae4395fefb4a2813522981955 = L.circleMarker(
+                [55.857009700000006, 27.967254225],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_582f18d91215faf5d98df972b18dc8ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab460d64aaf1c6a13730eb7f909c07a8 = $(`<div id="html_ab460d64aaf1c6a13730eb7f909c07a8" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Верхнедвинский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_582f18d91215faf5d98df972b18dc8ff.setContent(html_ab460d64aaf1c6a13730eb7f909c07a8);
+            
+        
+
+        circle_marker_3005210ae4395fefb4a2813522981955.bindPopup(popup_582f18d91215faf5d98df972b18dc8ff)
+        ;
+
+        
+    
+    
+            var circle_marker_7c44711bab01f23d3af5e09df420fd92 = L.circleMarker(
+                [55.857009700000006, 27.967254225],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_4c18cc5a6fcfd197c2f425e93a1f123c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcf9662d474eda1c7f4a6ea14a4b3b0d = $(`<div id="html_fcf9662d474eda1c7f4a6ea14a4b3b0d" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Верхнедвинский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_4c18cc5a6fcfd197c2f425e93a1f123c.setContent(html_fcf9662d474eda1c7f4a6ea14a4b3b0d);
+            
+        
+
+        circle_marker_7c44711bab01f23d3af5e09df420fd92.bindPopup(popup_4c18cc5a6fcfd197c2f425e93a1f123c)
+        ;
+
+        
+    
+    
+            var circle_marker_0e2c00e63af78b4feb25f3a67972501c = L.circleMarker(
+                [55.18319605, 27.870078324263886],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_89cef8b61548e4838a257a314a5efe62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec085fac92817ed1c878ce013666163e = $(`<div id="html_ec085fac92817ed1c878ce013666163e" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Глубокский район<br>                 3<br>                 3<br></div>`)[0];
+                popup_89cef8b61548e4838a257a314a5efe62.setContent(html_ec085fac92817ed1c878ce013666163e);
+            
+        
+
+        circle_marker_0e2c00e63af78b4feb25f3a67972501c.bindPopup(popup_89cef8b61548e4838a257a314a5efe62)
+        ;
+
+        
+    
+    
+            var circle_marker_7f66f7577aef535a464cf4d6cf11441b = L.circleMarker(
+                [55.18319605, 27.870078324263886],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_c32e89b711dc0baa6fda2f990e49de75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ca5d38607bf0b0f7a079f75a9b9ed6b = $(`<div id="html_1ca5d38607bf0b0f7a079f75a9b9ed6b" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Глубокский район<br>                 3<br>                 3<br></div>`)[0];
+                popup_c32e89b711dc0baa6fda2f990e49de75.setContent(html_1ca5d38607bf0b0f7a079f75a9b9ed6b);
+            
+        
+
+        circle_marker_7f66f7577aef535a464cf4d6cf11441b.bindPopup(popup_c32e89b711dc0baa6fda2f990e49de75)
+        ;
+
+        
+    
+    
+            var circle_marker_7a701f5b60acf0fbf4d3b952e5aaef70 = L.circleMarker(
+                [54.8217713, 27.959519148273852],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_9f6900d10322a4f7fb726c2d6e717b73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8dafae22f41b382e456c2edad9854fa = $(`<div id="html_a8dafae22f41b382e456c2edad9854fa" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Докшицкий район<br>                 2<br>                 2<br></div>`)[0];
+                popup_9f6900d10322a4f7fb726c2d6e717b73.setContent(html_a8dafae22f41b382e456c2edad9854fa);
+            
+        
+
+        circle_marker_7a701f5b60acf0fbf4d3b952e5aaef70.bindPopup(popup_9f6900d10322a4f7fb726c2d6e717b73)
+        ;
+
+        
+    
+    
+            var circle_marker_51489ec99fc29b5af3c9cc913aab3473 = L.circleMarker(
+                [54.8217713, 27.959519148273852],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_0237dc3b43d1b4db4e98cca56ddf6f34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13683c8343e599038e20f3eb3186a3ee = $(`<div id="html_13683c8343e599038e20f3eb3186a3ee" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Докшицкий район<br>                 2<br>                 2<br></div>`)[0];
+                popup_0237dc3b43d1b4db4e98cca56ddf6f34.setContent(html_13683c8343e599038e20f3eb3186a3ee);
+            
+        
+
+        circle_marker_51489ec99fc29b5af3c9cc913aab3473.bindPopup(popup_0237dc3b43d1b4db4e98cca56ddf6f34)
+        ;
+
+        
+    
+    
+            var circle_marker_13ae6b87a5cab09cb7aca409e50b604d = L.circleMarker(
+                [55.0159125, 30.642123128433823],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_18aca03ace4601213e1b45e74307c8b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6f525120225d3dbfc01ba82196bd86c = $(`<div id="html_e6f525120225d3dbfc01ba82196bd86c" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Лиозненский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_18aca03ace4601213e1b45e74307c8b9.setContent(html_e6f525120225d3dbfc01ba82196bd86c);
+            
+        
+
+        circle_marker_13ae6b87a5cab09cb7aca409e50b604d.bindPopup(popup_18aca03ace4601213e1b45e74307c8b9)
+        ;
+
+        
+    
+    
+            var circle_marker_afe78a17cb9f2250536ad20314175c1f = L.circleMarker(
+                [55.0159125, 30.642123128433823],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_ee9d70eaa45b1261e579ed16ad843abf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f0e1ed2b14ba929018db630c6a633db = $(`<div id="html_0f0e1ed2b14ba929018db630c6a633db" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Лиозненский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_ee9d70eaa45b1261e579ed16ad843abf.setContent(html_0f0e1ed2b14ba929018db630c6a633db);
+            
+        
+
+        circle_marker_afe78a17cb9f2250536ad20314175c1f.bindPopup(popup_ee9d70eaa45b1261e579ed16ad843abf)
+        ;
+
+        
+    
+    
+            var circle_marker_afa842c9d918b11d3e638971f57ca42e = L.circleMarker(
+                [55.5816065, 27.75141575],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_6667769f321249e63ec0f3b2bc64ba76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54be1f276f8af73eff0d5396757a6572 = $(`<div id="html_54be1f276f8af73eff0d5396757a6572" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Миорский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_6667769f321249e63ec0f3b2bc64ba76.setContent(html_54be1f276f8af73eff0d5396757a6572);
+            
+        
+
+        circle_marker_afa842c9d918b11d3e638971f57ca42e.bindPopup(popup_6667769f321249e63ec0f3b2bc64ba76)
+        ;
+
+        
+    
+    
+            var circle_marker_b2c7e50e96b054769b8c87ead42f9ae1 = L.circleMarker(
+                [55.5816065, 27.75141575],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_ed42c41c8c4eeb59c0d9af3dbbc7c16b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66bbc64502dbe54b03a5e1d9c0d5088c = $(`<div id="html_66bbc64502dbe54b03a5e1d9c0d5088c" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Миорский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_ed42c41c8c4eeb59c0d9af3dbbc7c16b.setContent(html_66bbc64502dbe54b03a5e1d9c0d5088c);
+            
+        
+
+        circle_marker_b2c7e50e96b054769b8c87ead42f9ae1.bindPopup(popup_ed42c41c8c4eeb59c0d9af3dbbc7c16b)
+        ;
+
+        
+    
+    
+            var circle_marker_01aded139e0f278e30e0e686f1d0b8a8 = L.circleMarker(
+                [54.5317631, 30.36995033220456],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_2370f044a55431e1ad03f82d8739f8e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9e5a00f894946f6776338349b11b4c0 = $(`<div id="html_a9e5a00f894946f6776338349b11b4c0" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Оршанский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_2370f044a55431e1ad03f82d8739f8e2.setContent(html_a9e5a00f894946f6776338349b11b4c0);
+            
+        
+
+        circle_marker_01aded139e0f278e30e0e686f1d0b8a8.bindPopup(popup_2370f044a55431e1ad03f82d8739f8e2)
+        ;
+
+        
+    
+    
+            var circle_marker_fcf83405b7deb4c04ed6e93c806aa078 = L.circleMarker(
+                [55.50371035, 29.029126151170807],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_a8a2a57ec2d9c781059ade8027f13b56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d863bfa3da52026b211bbbd4d348d06f = $(`<div id="html_d863bfa3da52026b211bbbd4d348d06f" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Полоцкий район<br>                 1<br>                 1<br></div>`)[0];
+                popup_a8a2a57ec2d9c781059ade8027f13b56.setContent(html_d863bfa3da52026b211bbbd4d348d06f);
+            
+        
+
+        circle_marker_fcf83405b7deb4c04ed6e93c806aa078.bindPopup(popup_a8a2a57ec2d9c781059ade8027f13b56)
+        ;
+
+        
+    
+    
+            var circle_marker_f35504ce79d138f1cf471b004b0476c6 = L.circleMarker(
+                [55.50371035, 29.029126151170807],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_3e998462bf5fc38cfdbeb80e24099569 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19fa491dcb8ead8bd6bb9e77fd66a884 = $(`<div id="html_19fa491dcb8ead8bd6bb9e77fd66a884" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Полоцкий район<br>                 1<br>                 1<br></div>`)[0];
+                popup_3e998462bf5fc38cfdbeb80e24099569.setContent(html_19fa491dcb8ead8bd6bb9e77fd66a884);
+            
+        
+
+        circle_marker_f35504ce79d138f1cf471b004b0476c6.bindPopup(popup_3e998462bf5fc38cfdbeb80e24099569)
+        ;
+
+        
+    
+    
+            var circle_marker_32a1621370e37bfa220e50680a3f634e = L.circleMarker(
+                [55.1271617, 26.877338190391086],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_536ae46f71bc89bd93ff3b5697c14159 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f03fc1ab05727d12a10258d1c027663 = $(`<div id="html_3f03fc1ab05727d12a10258d1c027663" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Поставский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_536ae46f71bc89bd93ff3b5697c14159.setContent(html_3f03fc1ab05727d12a10258d1c027663);
+            
+        
+
+        circle_marker_32a1621370e37bfa220e50680a3f634e.bindPopup(popup_536ae46f71bc89bd93ff3b5697c14159)
+        ;
+
+        
+    
+    
+            var circle_marker_01f66cbcdab765af8d3939ca003cc462 = L.circleMarker(
+                [55.9081237, 28.907359150208933],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_f66391eb3760a7a17b5da8d8f9c5cad0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3426bc46677dfec13fe722db04051186 = $(`<div id="html_3426bc46677dfec13fe722db04051186" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Россонский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_f66391eb3760a7a17b5da8d8f9c5cad0.setContent(html_3426bc46677dfec13fe722db04051186);
+            
+        
+
+        circle_marker_01f66cbcdab765af8d3939ca003cc462.bindPopup(popup_f66391eb3760a7a17b5da8d8f9c5cad0)
+        ;
+
+        
+    
+    
+            var circle_marker_e12b7c15bf10f3a5a48ebcb5efccc549 = L.circleMarker(
+                [54.82727, 29.93408144444613],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_42e6cc3f5a8cc53311380e7a91596560 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80b3e7eb9d62a3761d215a94b61f4120 = $(`<div id="html_80b3e7eb9d62a3761d215a94b61f4120" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Сенненский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_42e6cc3f5a8cc53311380e7a91596560.setContent(html_80b3e7eb9d62a3761d215a94b61f4120);
+            
+        
+
+        circle_marker_e12b7c15bf10f3a5a48ebcb5efccc549.bindPopup(popup_42e6cc3f5a8cc53311380e7a91596560)
+        ;
+
+        
+    
+    
+            var circle_marker_bdfff24a81f52acb804d030048295690 = L.circleMarker(
+                [54.4387719, 29.776553383751576],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_d452e6f898baf11e5c4421b935d64ce9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c8cb248ace1ffdaf50efa608159ef7b = $(`<div id="html_9c8cb248ace1ffdaf50efa608159ef7b" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Толочинский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_d452e6f898baf11e5c4421b935d64ce9.setContent(html_9c8cb248ace1ffdaf50efa608159ef7b);
+            
+        
+
+        circle_marker_bdfff24a81f52acb804d030048295690.bindPopup(popup_d452e6f898baf11e5c4421b935d64ce9)
+        ;
+
+        
+    
+    
+            var circle_marker_7bff9bf3514d7a2bcbe7f1809061ed95 = L.circleMarker(
+                [55.1369836, 28.666119996781372],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_3e3f1e0c1d453738b033129f1022812e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_579827ec6dd9ea6550e55e331633a809 = $(`<div id="html_579827ec6dd9ea6550e55e331633a809" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Ушачский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_3e3f1e0c1d453738b033129f1022812e.setContent(html_579827ec6dd9ea6550e55e331633a809);
+            
+        
+
+        circle_marker_7bff9bf3514d7a2bcbe7f1809061ed95.bindPopup(popup_3e3f1e0c1d453738b033129f1022812e)
+        ;
+
+        
+    
+    
+            var circle_marker_632fe288757e2ad5777495247330c708 = L.circleMarker(
+                [54.775900050000004, 29.219544553561278],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_cc91b095b0406ea6beed24e915db2c26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a8ce285d500d7da3c11f1ee60b464f3 = $(`<div id="html_1a8ce285d500d7da3c11f1ee60b464f3" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Чашникский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_cc91b095b0406ea6beed24e915db2c26.setContent(html_1a8ce285d500d7da3c11f1ee60b464f3);
+            
+        
+
+        circle_marker_632fe288757e2ad5777495247330c708.bindPopup(popup_cc91b095b0406ea6beed24e915db2c26)
+        ;
+
+        
+    
+    
+            var circle_marker_cd6ff04b2bf82189944534bbfc1f1935 = L.circleMarker(
+                [54.775900050000004, 29.219544553561278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_d2741bc0947d7f5d6bd36f396d2e36bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a39ed4ce1f7829ffb9f1f9ff248e985 = $(`<div id="html_5a39ed4ce1f7829ffb9f1f9ff248e985" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Чашникский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_d2741bc0947d7f5d6bd36f396d2e36bb.setContent(html_5a39ed4ce1f7829ffb9f1f9ff248e985);
+            
+        
+
+        circle_marker_cd6ff04b2bf82189944534bbfc1f1935.bindPopup(popup_d2741bc0947d7f5d6bd36f396d2e36bb)
+        ;
+
+        
+    
+    
+            var circle_marker_c1ad29b73697e071c64c04a2d3542a33 = L.circleMarker(
+                [55.3803819, 27.537646940815478],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_da9ee774d22df41c165053aee7c0e26e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3918a7ea96dea6d37c8b132660a1a215 = $(`<div id="html_3918a7ea96dea6d37c8b132660a1a215" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Шарковщинский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_da9ee774d22df41c165053aee7c0e26e.setContent(html_3918a7ea96dea6d37c8b132660a1a215);
+            
+        
+
+        circle_marker_c1ad29b73697e071c64c04a2d3542a33.bindPopup(popup_da9ee774d22df41c165053aee7c0e26e)
+        ;
+
+        
+    
+    
+            var circle_marker_e85f4123a9da525dc0c09fbc6a81d9ef = L.circleMarker(
+                [55.3803819, 27.537646940815478],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_ddd487df6c6095cd52d742e887422c93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_443cd0ac0485f24ce2daf7794ad09e72 = $(`<div id="html_443cd0ac0485f24ce2daf7794ad09e72" style="width: 100.0%; height: 100.0%;">ВИТЕБСКАЯ область,Шарковщинский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_ddd487df6c6095cd52d742e887422c93.setContent(html_443cd0ac0485f24ce2daf7794ad09e72);
+            
+        
+
+        circle_marker_e85f4123a9da525dc0c09fbc6a81d9ef.bindPopup(popup_ddd487df6c6095cd52d742e887422c93)
+        ;
+
+        
+    
+    
+            var circle_marker_4c8fbf79c8d144987a7742e427d9be5b = L.circleMarker(
+                [51.644488949999996, 30.32159565506717],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_b5787fd28832120052a20c9575552500 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3c4a6e684236a12ee4ee52419ba7853 = $(`<div id="html_b3c4a6e684236a12ee4ee52419ba7853" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Брагинский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_b5787fd28832120052a20c9575552500.setContent(html_b3c4a6e684236a12ee4ee52419ba7853);
+            
+        
+
+        circle_marker_4c8fbf79c8d144987a7742e427d9be5b.bindPopup(popup_b5787fd28832120052a20c9575552500)
+        ;
+
+        
+    
+    
+            var circle_marker_43e6ff43588842a4234c693749159c89 = L.circleMarker(
+                [52.7189592, 31.269601770128553],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_a4efd39615b075aa6ce06d3672a22cef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a6cea5a2e28e934edaac56980a45f02 = $(`<div id="html_1a6cea5a2e28e934edaac56980a45f02" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Ветковский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_a4efd39615b075aa6ce06d3672a22cef.setContent(html_1a6cea5a2e28e934edaac56980a45f02);
+            
+        
+
+        circle_marker_43e6ff43588842a4234c693749159c89.bindPopup(popup_a4efd39615b075aa6ce06d3672a22cef)
+        ;
+
+        
+    
+    
+            var circle_marker_28b291926b7bea79886836033662c907 = L.circleMarker(
+                [52.31430185000001, 30.993282357488262],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_8fa0935b83f85b5f4a5db87ea3d14585 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dd3f3d816f337fa35514d53b8cf2ef3 = $(`<div id="html_7dd3f3d816f337fa35514d53b8cf2ef3" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Гомельский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_8fa0935b83f85b5f4a5db87ea3d14585.setContent(html_7dd3f3d816f337fa35514d53b8cf2ef3);
+            
+        
+
+        circle_marker_28b291926b7bea79886836033662c907.bindPopup(popup_8fa0935b83f85b5f4a5db87ea3d14585)
+        ;
+
+        
+    
+    
+            var circle_marker_4aa4c27051da32414d687a73ba00d92f = L.circleMarker(
+                [52.31430185000001, 30.993282357488262],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_5012bf04e88e16a11d80b630307c3797 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33f74aea42556066b7ed1c51466267a6 = $(`<div id="html_33f74aea42556066b7ed1c51466267a6" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Гомельский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_5012bf04e88e16a11d80b630307c3797.setContent(html_33f74aea42556066b7ed1c51466267a6);
+            
+        
+
+        circle_marker_4aa4c27051da32414d687a73ba00d92f.bindPopup(popup_5012bf04e88e16a11d80b630307c3797)
+        ;
+
+        
+    
+    
+            var circle_marker_ab79cc22c5b95f78d493ab02e387bce8 = L.circleMarker(
+                [52.378453750000006, 31.416911504808475],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_87f96e743a5af707ad0e785977972e8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5594d18f174cb9ec44d5282d280397d9 = $(`<div id="html_5594d18f174cb9ec44d5282d280397d9" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Добрушский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_87f96e743a5af707ad0e785977972e8d.setContent(html_5594d18f174cb9ec44d5282d280397d9);
+            
+        
+
+        circle_marker_ab79cc22c5b95f78d493ab02e387bce8.bindPopup(popup_87f96e743a5af707ad0e785977972e8d)
+        ;
+
+        
+    
+    
+            var circle_marker_9ead9d5789d8742f01f21dd56e5a578b = L.circleMarker(
+                [51.65668085, 28.84199704963099],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_db5acae6e922af0cfd544397f32f4063 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ba646bbb956d99b47fc45d16cd10d3a = $(`<div id="html_9ba646bbb956d99b47fc45d16cd10d3a" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Ельский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_db5acae6e922af0cfd544397f32f4063.setContent(html_9ba646bbb956d99b47fc45d16cd10d3a);
+            
+        
+
+        circle_marker_9ead9d5789d8742f01f21dd56e5a578b.bindPopup(popup_db5acae6e922af0cfd544397f32f4063)
+        ;
+
+        
+    
+    
+            var circle_marker_1ac604808435dca758adaf5d03adc1da = L.circleMarker(
+                [52.785483150000005, 30.028060802728874],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_6bbc6ae99c7ee4f901eefc51e945a8eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0b8f6252d7874268a25fe3d0d2d851e = $(`<div id="html_e0b8f6252d7874268a25fe3d0d2d851e" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Жлобинский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_6bbc6ae99c7ee4f901eefc51e945a8eb.setContent(html_e0b8f6252d7874268a25fe3d0d2d851e);
+            
+        
+
+        circle_marker_1ac604808435dca758adaf5d03adc1da.bindPopup(popup_6bbc6ae99c7ee4f901eefc51e945a8eb)
+        ;
+
+        
+    
+    
+            var circle_marker_69d547e48f36fc739e030bd6e3a729c9 = L.circleMarker(
+                [53.118896, 30.791627574521776],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_7f643b58f070dafdfc32e5f42de3b42c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a13c3194fdc5262c342c90ac81dff67f = $(`<div id="html_a13c3194fdc5262c342c90ac81dff67f" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Кормянский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_7f643b58f070dafdfc32e5f42de3b42c.setContent(html_a13c3194fdc5262c342c90ac81dff67f);
+            
+        
+
+        circle_marker_69d547e48f36fc739e030bd6e3a729c9.bindPopup(popup_7f643b58f070dafdfc32e5f42de3b42c)
+        ;
+
+        
+    
+    
+            var circle_marker_faa16b8b552927297f235857d6e299a0 = L.circleMarker(
+                [53.118896, 30.791627574521776],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_cf78974e36c84b528a8dec3e7346f2a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33536cebf7499dbb649ce33e63b3e27a = $(`<div id="html_33536cebf7499dbb649ce33e63b3e27a" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Кормянский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_cf78974e36c84b528a8dec3e7346f2a0.setContent(html_33536cebf7499dbb649ce33e63b3e27a);
+            
+        
+
+        circle_marker_faa16b8b552927297f235857d6e299a0.bindPopup(popup_cf78974e36c84b528a8dec3e7346f2a0)
+        ;
+
+        
+    
+    
+            var circle_marker_9778d3a40bbf820376e0d5da20912cfe = L.circleMarker(
+                [52.19432995, 29.367019187105207],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_5aea75c801bb22091bf889beefd65583 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da33ca235d54ca4bdb1c208c8707e34b = $(`<div id="html_da33ca235d54ca4bdb1c208c8707e34b" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Калинковичский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_5aea75c801bb22091bf889beefd65583.setContent(html_da33ca235d54ca4bdb1c208c8707e34b);
+            
+        
+
+        circle_marker_9778d3a40bbf820376e0d5da20912cfe.bindPopup(popup_5aea75c801bb22091bf889beefd65583)
+        ;
+
+        
+    
+    
+            var circle_marker_a49ece4b39a2060630791b60e75a8df6 = L.circleMarker(
+                [51.93478935, 30.614362325000002],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_96df6e46e3697364e65b341dbaef2427 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42506c3f89b09371a45349cfc6394df8 = $(`<div id="html_42506c3f89b09371a45349cfc6394df8" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Лоевский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_96df6e46e3697364e65b341dbaef2427.setContent(html_42506c3f89b09371a45349cfc6394df8);
+            
+        
+
+        circle_marker_a49ece4b39a2060630791b60e75a8df6.bindPopup(popup_96df6e46e3697364e65b341dbaef2427)
+        ;
+
+        
+    
+    
+            var circle_marker_130dfe2e3864c8e6b309c7c22f6f9de0 = L.circleMarker(
+                [51.7616498, 28.076825810236706],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_0e9975596d571d09ad49e709b2410191 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4962600b73a0dded6cbac0534521dec2 = $(`<div id="html_4962600b73a0dded6cbac0534521dec2" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Лельчицкий район<br>                 0<br>                 0<br></div>`)[0];
+                popup_0e9975596d571d09ad49e709b2410191.setContent(html_4962600b73a0dded6cbac0534521dec2);
+            
+        
+
+        circle_marker_130dfe2e3864c8e6b309c7c22f6f9de0.bindPopup(popup_0e9975596d571d09ad49e709b2410191)
+        ;
+
+        
+    
+    
+            var circle_marker_8298adb48ad10caa3aae8010ffb36c1a = L.circleMarker(
+                [51.981223650000004, 29.006096519279183],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_aaa3367ee14260f9bfe4d3bf79c9f8b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3787054319f61094031d40e75543b2cd = $(`<div id="html_3787054319f61094031d40e75543b2cd" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Мозырский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_aaa3367ee14260f9bfe4d3bf79c9f8b7.setContent(html_3787054319f61094031d40e75543b2cd);
+            
+        
+
+        circle_marker_8298adb48ad10caa3aae8010ffb36c1a.bindPopup(popup_aaa3367ee14260f9bfe4d3bf79c9f8b7)
+        ;
+
+        
+    
+    
+            var circle_marker_b69b8dc4e521cc2a5fb87e8ea05ce8e4 = L.circleMarker(
+                [51.6219516, 29.48117085928438],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_40d1a77692ca0d7b864302bb9409c6ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da6f5ef13ab4fa26c4fd74b3ad6b7bf0 = $(`<div id="html_da6f5ef13ab4fa26c4fd74b3ad6b7bf0" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Наровлянский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_40d1a77692ca0d7b864302bb9409c6ba.setContent(html_da6f5ef13ab4fa26c4fd74b3ad6b7bf0);
+            
+        
+
+        circle_marker_b69b8dc4e521cc2a5fb87e8ea05ce8e4.bindPopup(popup_40d1a77692ca0d7b864302bb9409c6ba)
+        ;
+
+        
+    
+    
+            var circle_marker_b38060901842a2e88d009f89cbbd4ab0 = L.circleMarker(
+                [51.6219516, 29.48117085928438],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_76214202398f037b5fa06a2767e5c502 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd75bb2a4ea7e7a4b9068c82e3a04d2b = $(`<div id="html_dd75bb2a4ea7e7a4b9068c82e3a04d2b" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Наровлянский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_76214202398f037b5fa06a2767e5c502.setContent(html_dd75bb2a4ea7e7a4b9068c82e3a04d2b);
+            
+        
+
+        circle_marker_b38060901842a2e88d009f89cbbd4ab0.bindPopup(popup_76214202398f037b5fa06a2767e5c502)
+        ;
+
+        
+    
+    
+            var circle_marker_3915b2c03037ef3008c50bca3b54613e = L.circleMarker(
+                [52.668586399999995, 28.814683629528396],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_c019f1bb4dba1e0c2b321eff08b4a406 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b7ea2589b40f130603ffe3daadfad41 = $(`<div id="html_0b7ea2589b40f130603ffe3daadfad41" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Октябрьский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_c019f1bb4dba1e0c2b321eff08b4a406.setContent(html_0b7ea2589b40f130603ffe3daadfad41);
+            
+        
+
+        circle_marker_3915b2c03037ef3008c50bca3b54613e.bindPopup(popup_c019f1bb4dba1e0c2b321eff08b4a406)
+        ;
+
+        
+    
+    
+            var circle_marker_116b2728f074b6e0b93b4e5367d0dadf = L.circleMarker(
+                [52.668586399999995, 28.814683629528396],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_43c224f2c117b25eb134e1548240dbf8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_252cc420f57fb7a9e26f492315029366 = $(`<div id="html_252cc420f57fb7a9e26f492315029366" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Октябрьский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_43c224f2c117b25eb134e1548240dbf8.setContent(html_252cc420f57fb7a9e26f492315029366);
+            
+        
+
+        circle_marker_116b2728f074b6e0b93b4e5367d0dadf.bindPopup(popup_43c224f2c117b25eb134e1548240dbf8)
+        ;
+
+        
+    
+    
+            var circle_marker_91491c8cd69a6dec8030e84e21ce4448 = L.circleMarker(
+                [52.2866815, 28.553924006944236],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_bc99ad5b1ad204762b793953b5d39fc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02f67f3528482af4bb12b396a2819833 = $(`<div id="html_02f67f3528482af4bb12b396a2819833" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Петриковский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_bc99ad5b1ad204762b793953b5d39fc9.setContent(html_02f67f3528482af4bb12b396a2819833);
+            
+        
+
+        circle_marker_91491c8cd69a6dec8030e84e21ce4448.bindPopup(popup_bc99ad5b1ad204762b793953b5d39fc9)
+        ;
+
+        
+    
+    
+            var circle_marker_976a86ec487f3ea08f71bd508bae69ec = L.circleMarker(
+                [52.32001555, 30.306317985215273],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_071938e513a6fe2f9bb75f7ede65bdae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_187563dcd24020f6b8583bb0ac8ab5f3 = $(`<div id="html_187563dcd24020f6b8583bb0ac8ab5f3" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Речицкий район<br>                 0<br>                 0<br></div>`)[0];
+                popup_071938e513a6fe2f9bb75f7ede65bdae.setContent(html_187563dcd24020f6b8583bb0ac8ab5f3);
+            
+        
+
+        circle_marker_976a86ec487f3ea08f71bd508bae69ec.bindPopup(popup_071938e513a6fe2f9bb75f7ede65bdae)
+        ;
+
+        
+    
+    
+            var circle_marker_a33e2f947bf41a13c9d4bb41cd2f3bc0 = L.circleMarker(
+                [53.10773415, 30.103274992550286],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_40afd16a120fcd9830b50e47dcc06ce0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ea7b299e9170dd8e98862fd2b322cb5 = $(`<div id="html_0ea7b299e9170dd8e98862fd2b322cb5" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Рогачевский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_40afd16a120fcd9830b50e47dcc06ce0.setContent(html_0ea7b299e9170dd8e98862fd2b322cb5);
+            
+        
+
+        circle_marker_a33e2f947bf41a13c9d4bb41cd2f3bc0.bindPopup(popup_40afd16a120fcd9830b50e47dcc06ce0)
+        ;
+
+        
+    
+    
+            var circle_marker_9131014d39676636a46812e712c07cfc = L.circleMarker(
+                [52.6840794, 29.458633207522027],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_c75dbc2b52266252fe8375ef61a4e764 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9ea0d30753d1ca8f7067d68647b3232 = $(`<div id="html_b9ea0d30753d1ca8f7067d68647b3232" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Светлогорский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_c75dbc2b52266252fe8375ef61a4e764.setContent(html_b9ea0d30753d1ca8f7067d68647b3232);
+            
+        
+
+        circle_marker_9131014d39676636a46812e712c07cfc.bindPopup(popup_c75dbc2b52266252fe8375ef61a4e764)
+        ;
+
+        
+    
+    
+            var circle_marker_654134c190aa63fcde751b2aa59463d8 = L.circleMarker(
+                [52.6840794, 29.458633207522027],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_c42063649e156a3d216c066348cb4611 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd2b61a3b9381b7cafa91ce3fde69470 = $(`<div id="html_bd2b61a3b9381b7cafa91ce3fde69470" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Светлогорский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_c42063649e156a3d216c066348cb4611.setContent(html_bd2b61a3b9381b7cafa91ce3fde69470);
+            
+        
+
+        circle_marker_654134c190aa63fcde751b2aa59463d8.bindPopup(popup_c42063649e156a3d216c066348cb4611)
+        ;
+
+        
+    
+    
+            var circle_marker_4894d266ee4e280c0961420e0433ba6b = L.circleMarker(
+                [51.81426105, 29.805065853261127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_cc9a5e64fe42e8032376689a9fad4ce2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e711990e8fe641083344d8d636857d7a = $(`<div id="html_e711990e8fe641083344d8d636857d7a" style="width: 100.0%; height: 100.0%;">ГОМЕЛЬСКАЯ область,Хойникский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_cc9a5e64fe42e8032376689a9fad4ce2.setContent(html_e711990e8fe641083344d8d636857d7a);
+            
+        
+
+        circle_marker_4894d266ee4e280c0961420e0433ba6b.bindPopup(popup_cc9a5e64fe42e8032376689a9fad4ce2)
+        ;
+
+        
+    
+    
+            var circle_marker_4ace1ba912b8b8f749bb007f7a6c6e54 = L.circleMarker(
+                [53.23922005, 23.96716979015907],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_a9b47445a40856c7a8505502354d30b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7973672cc2e937205a5a3af99e12a787 = $(`<div id="html_7973672cc2e937205a5a3af99e12a787" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Берестовицкий район<br>                 0<br>                 0<br></div>`)[0];
+                popup_a9b47445a40856c7a8505502354d30b5.setContent(html_7973672cc2e937205a5a3af99e12a787);
+            
+        
+
+        circle_marker_4ace1ba912b8b8f749bb007f7a6c6e54.bindPopup(popup_a9b47445a40856c7a8505502354d30b5)
+        ;
+
+        
+    
+    
+            var circle_marker_871ffbad74ad2648f3b303522b75edaa = L.circleMarker(
+                [53.1794666, 24.335646985888793],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_f742218454d1f6f3e1eeadfcd5d5da41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34efed4cc7257460585ad75ef238f69b = $(`<div id="html_34efed4cc7257460585ad75ef238f69b" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Волковысский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_f742218454d1f6f3e1eeadfcd5d5da41.setContent(html_34efed4cc7257460585ad75ef238f69b);
+            
+        
+
+        circle_marker_871ffbad74ad2648f3b303522b75edaa.bindPopup(popup_f742218454d1f6f3e1eeadfcd5d5da41)
+        ;
+
+        
+    
+    
+            var circle_marker_9060dc3fa008937f1b50e45fced1120c = L.circleMarker(
+                [54.0644037, 25.059250730392378],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_02f7aaa5b8cc687cd0fac6ba9cd6a05b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_606b50ce92d9cefe054e3e5e3bd5641b = $(`<div id="html_606b50ce92d9cefe054e3e5e3bd5641b" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Вороновский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_02f7aaa5b8cc687cd0fac6ba9cd6a05b.setContent(html_606b50ce92d9cefe054e3e5e3bd5641b);
+            
+        
+
+        circle_marker_9060dc3fa008937f1b50e45fced1120c.bindPopup(popup_02f7aaa5b8cc687cd0fac6ba9cd6a05b)
+        ;
+
+        
+    
+    
+            var circle_marker_3279900bc45eb9688d17c611970b4398 = L.circleMarker(
+                [54.0644037, 25.059250730392378],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_613f5cb5223794038c6317e800e6ef21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_921dcf5bfb74be36db244b7a04942614 = $(`<div id="html_921dcf5bfb74be36db244b7a04942614" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Вороновский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_613f5cb5223794038c6317e800e6ef21.setContent(html_921dcf5bfb74be36db244b7a04942614);
+            
+        
+
+        circle_marker_3279900bc45eb9688d17c611970b4398.bindPopup(popup_613f5cb5223794038c6317e800e6ef21)
+        ;
+
+        
+    
+    
+            var circle_marker_a12a914dfdb971bcb2203ecc8f5983ba = L.circleMarker(
+                [53.67060835, 24.182405094993207],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_79044ed06bc2ec2a69395040e016f6b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d0ce4a7415a1ecc0e4e90e5a9e79389 = $(`<div id="html_8d0ce4a7415a1ecc0e4e90e5a9e79389" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Гродненский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_79044ed06bc2ec2a69395040e016f6b4.setContent(html_8d0ce4a7415a1ecc0e4e90e5a9e79389);
+            
+        
+
+        circle_marker_a12a914dfdb971bcb2203ecc8f5983ba.bindPopup(popup_79044ed06bc2ec2a69395040e016f6b4)
+        ;
+
+        
+    
+    
+            var circle_marker_6ef2816a8f4379f265caec5b78fa592a = L.circleMarker(
+                [53.4426601, 25.392523347731995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_95e7fd9d114519699bbf0946d491661a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2ef4355f27d1a84068709c8f69b1c6e = $(`<div id="html_c2ef4355f27d1a84068709c8f69b1c6e" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Дятловский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_95e7fd9d114519699bbf0946d491661a.setContent(html_c2ef4355f27d1a84068709c8f69b1c6e);
+            
+        
+
+        circle_marker_6ef2816a8f4379f265caec5b78fa592a.bindPopup(popup_95e7fd9d114519699bbf0946d491661a)
+        ;
+
+        
+    
+    
+            var circle_marker_cb0088c10cc9351c414a366c6c3a3d37 = L.circleMarker(
+                [53.4426601, 25.392523347731995],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_ff76dcdf3cb829f6eafdcf60d4feaf00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f50f809ceeef58bcf94984ffff78a16 = $(`<div id="html_6f50f809ceeef58bcf94984ffff78a16" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Дятловский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_ff76dcdf3cb829f6eafdcf60d4feaf00.setContent(html_6f50f809ceeef58bcf94984ffff78a16);
+            
+        
+
+        circle_marker_cb0088c10cc9351c414a366c6c3a3d37.bindPopup(popup_ff76dcdf3cb829f6eafdcf60d4feaf00)
+        ;
+
+        
+    
+    
+            var circle_marker_3907aaff03242ce3bd3b2c753b1ffd3b = L.circleMarker(
+                [53.12037025, 24.78308423348194],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_7bc3c139249eda0f514f28c08df362f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38c5919cc21502496fcb801b96cc830b = $(`<div id="html_38c5919cc21502496fcb801b96cc830b" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Зельвенский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_7bc3c139249eda0f514f28c08df362f8.setContent(html_38c5919cc21502496fcb801b96cc830b);
+            
+        
+
+        circle_marker_3907aaff03242ce3bd3b2c753b1ffd3b.bindPopup(popup_7bc3c139249eda0f514f28c08df362f8)
+        ;
+
+        
+    
+    
+            var circle_marker_a7e5b9eb7e69e6cca0477a946d1c35d2 = L.circleMarker(
+                [53.12037025, 24.78308423348194],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_924e23d980791f14a2f1f791b5c88121 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6143cbf7ef03eb1b61880ce82fab82f9 = $(`<div id="html_6143cbf7ef03eb1b61880ce82fab82f9" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Зельвенский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_924e23d980791f14a2f1f791b5c88121.setContent(html_6143cbf7ef03eb1b61880ce82fab82f9);
+            
+        
+
+        circle_marker_a7e5b9eb7e69e6cca0477a946d1c35d2.bindPopup(popup_924e23d980791f14a2f1f791b5c88121)
+        ;
+
+        
+    
+    
+            var circle_marker_60c3aaee07f84ae41da36819329316dd = L.circleMarker(
+                [54.03026235, 25.80942720360321],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_3923b2e26bd0e3c7faf9abc6b28b5b43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bb2ccbdec00c0af01f676c16277f7d7 = $(`<div id="html_7bb2ccbdec00c0af01f676c16277f7d7" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Ивьевский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_3923b2e26bd0e3c7faf9abc6b28b5b43.setContent(html_7bb2ccbdec00c0af01f676c16277f7d7);
+            
+        
+
+        circle_marker_60c3aaee07f84ae41da36819329316dd.bindPopup(popup_3923b2e26bd0e3c7faf9abc6b28b5b43)
+        ;
+
+        
+    
+    
+            var circle_marker_74d98aca0135e4934e283f41cbbffca6 = L.circleMarker(
+                [54.03026235, 25.80942720360321],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_c6b7bfd1ab588de04c992a09d777e017 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_853a05b9ba6dd23f0df7fede9ad652dc = $(`<div id="html_853a05b9ba6dd23f0df7fede9ad652dc" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Ивьевский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_c6b7bfd1ab588de04c992a09d777e017.setContent(html_853a05b9ba6dd23f0df7fede9ad652dc);
+            
+        
+
+        circle_marker_74d98aca0135e4934e283f41cbbffca6.bindPopup(popup_c6b7bfd1ab588de04c992a09d777e017)
+        ;
+
+        
+    
+    
+            var circle_marker_fbc002dd0424ffca1143d5279bb35577 = L.circleMarker(
+                [53.51011175, 26.193366057178693],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_9d0c9d93601d509f6c98f24a8d7a139e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eae9f8bf9ace6c9c847977489ca9cb53 = $(`<div id="html_eae9f8bf9ace6c9c847977489ca9cb53" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Кореличский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_9d0c9d93601d509f6c98f24a8d7a139e.setContent(html_eae9f8bf9ace6c9c847977489ca9cb53);
+            
+        
+
+        circle_marker_fbc002dd0424ffca1143d5279bb35577.bindPopup(popup_9d0c9d93601d509f6c98f24a8d7a139e)
+        ;
+
+        
+    
+    
+            var circle_marker_c50cdfc20021c7676f2e483d0913421f = L.circleMarker(
+                [53.51011175, 26.193366057178693],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_bdd9ab7189d8f67ebeb09774a2fb930b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_043e84960c5eb120d42769166e86a20c = $(`<div id="html_043e84960c5eb120d42769166e86a20c" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Кореличский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_bdd9ab7189d8f67ebeb09774a2fb930b.setContent(html_043e84960c5eb120d42769166e86a20c);
+            
+        
+
+        circle_marker_c50cdfc20021c7676f2e483d0913421f.bindPopup(popup_bdd9ab7189d8f67ebeb09774a2fb930b)
+        ;
+
+        
+    
+    
+            var circle_marker_466ad74ee3101628720e86775283c934 = L.circleMarker(
+                [53.8006889, 25.260366636745992],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_0c58827547a3c069f48ac381703e61dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f1f0df7db1a133b9d9e1008b24b8765 = $(`<div id="html_8f1f0df7db1a133b9d9e1008b24b8765" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Лидский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_0c58827547a3c069f48ac381703e61dd.setContent(html_8f1f0df7db1a133b9d9e1008b24b8765);
+            
+        
+
+        circle_marker_466ad74ee3101628720e86775283c934.bindPopup(popup_0c58827547a3c069f48ac381703e61dd)
+        ;
+
+        
+    
+    
+            var circle_marker_ccdf7fe073e0b186682e0848cc7608f0 = L.circleMarker(
+                [53.8006889, 25.260366636745992],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_bb102fdc29fb977d660f23c574fc0341 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0c44e7b0c9a6b961b34cd5f27f8554a = $(`<div id="html_c0c44e7b0c9a6b961b34cd5f27f8554a" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Лидский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_bb102fdc29fb977d660f23c574fc0341.setContent(html_c0c44e7b0c9a6b961b34cd5f27f8554a);
+            
+        
+
+        circle_marker_ccdf7fe073e0b186682e0848cc7608f0.bindPopup(popup_bb102fdc29fb977d660f23c574fc0341)
+        ;
+
+        
+    
+    
+            var circle_marker_9a176aef9a2cb44f0ce2166f9d918f52 = L.circleMarker(
+                [53.62057305, 25.738839394346115],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_7e5e41ce2e196bd7d6e4ff5317aa93f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b12c40e15f16532fce70c27d8fefc187 = $(`<div id="html_b12c40e15f16532fce70c27d8fefc187" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Новогрудский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_7e5e41ce2e196bd7d6e4ff5317aa93f9.setContent(html_b12c40e15f16532fce70c27d8fefc187);
+            
+        
+
+        circle_marker_9a176aef9a2cb44f0ce2166f9d918f52.bindPopup(popup_7e5e41ce2e196bd7d6e4ff5317aa93f9)
+        ;
+
+        
+    
+    
+            var circle_marker_90783fd3da15671d9502ae05f49bb79c = L.circleMarker(
+                [53.62057305, 25.738839394346115],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_a1a0a9e85f198b136a98dfe23ea17c12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd4a963e9ce8a129abc2be3179699e44 = $(`<div id="html_cd4a963e9ce8a129abc2be3179699e44" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Новогрудский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_a1a0a9e85f198b136a98dfe23ea17c12.setContent(html_cd4a963e9ce8a129abc2be3179699e44);
+            
+        
+
+        circle_marker_90783fd3da15671d9502ae05f49bb79c.bindPopup(popup_a1a0a9e85f198b136a98dfe23ea17c12)
+        ;
+
+        
+    
+    
+            var circle_marker_b4a32e3eb26c6724b8c46c8020c71a73 = L.circleMarker(
+                [54.7662178, 25.99896108419034],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_bf0864cc3dc29565c1b4c831128e4b59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77e52d51bfac8bca4459713475f92181 = $(`<div id="html_77e52d51bfac8bca4459713475f92181" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Островецкий район<br>                 0<br>                 0<br></div>`)[0];
+                popup_bf0864cc3dc29565c1b4c831128e4b59.setContent(html_77e52d51bfac8bca4459713475f92181);
+            
+        
+
+        circle_marker_b4a32e3eb26c6724b8c46c8020c71a73.bindPopup(popup_bf0864cc3dc29565c1b4c831128e4b59)
+        ;
+
+        
+    
+    
+            var circle_marker_17e3fad4056197db69abf4528fd0412b = L.circleMarker(
+                [52.9302392, 24.265143579358597],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_2e773a06e1774b084681fc7e10df3b25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a27502e58d6c8a73e5829cd4d424aa62 = $(`<div id="html_a27502e58d6c8a73e5829cd4d424aa62" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Свислочский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_2e773a06e1774b084681fc7e10df3b25.setContent(html_a27502e58d6c8a73e5829cd4d424aa62);
+            
+        
+
+        circle_marker_17e3fad4056197db69abf4528fd0412b.bindPopup(popup_2e773a06e1774b084681fc7e10df3b25)
+        ;
+
+        
+    
+    
+            var circle_marker_18bc891f5ea8c6e379ddaba73fa4bfde = L.circleMarker(
+                [53.063668449999994, 25.25446472669195],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_b40048e5867b3091d6d3da6e20321330 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7873ce0829f73443056d730cb6c1ec9b = $(`<div id="html_7873ce0829f73443056d730cb6c1ec9b" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Слонимский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_b40048e5867b3091d6d3da6e20321330.setContent(html_7873ce0829f73443056d730cb6c1ec9b);
+            
+        
+
+        circle_marker_18bc891f5ea8c6e379ddaba73fa4bfde.bindPopup(popup_b40048e5867b3091d6d3da6e20321330)
+        ;
+
+        
+    
+    
+            var circle_marker_04a856cdb452a7a05df0736a1d155925 = L.circleMarker(
+                [53.063668449999994, 25.25446472669195],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_0e1df97db36f31c46571da74e0776c34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ec269e718db8f9550afaac826a5f403 = $(`<div id="html_6ec269e718db8f9550afaac826a5f403" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Слонимский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_0e1df97db36f31c46571da74e0776c34.setContent(html_6ec269e718db8f9550afaac826a5f403);
+            
+        
+
+        circle_marker_04a856cdb452a7a05df0736a1d155925.bindPopup(popup_0e1df97db36f31c46571da74e0776c34)
+        ;
+
+        
+    
+    
+            var circle_marker_22875ef4929cc23f8de9e2c311f5eb93 = L.circleMarker(
+                [54.51246295, 26.38929919745216],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_d1016267250a08c5379856b1bb8f4080 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b519e73a3a7689d8d013ab7702dc9f7 = $(`<div id="html_2b519e73a3a7689d8d013ab7702dc9f7" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Сморгонский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_d1016267250a08c5379856b1bb8f4080.setContent(html_2b519e73a3a7689d8d013ab7702dc9f7);
+            
+        
+
+        circle_marker_22875ef4929cc23f8de9e2c311f5eb93.bindPopup(popup_d1016267250a08c5379856b1bb8f4080)
+        ;
+
+        
+    
+    
+            var circle_marker_58b977658b1b1d5099f964291a53ff34 = L.circleMarker(
+                [53.723340050000004, 24.666120214321754],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_d9693d84a440c52c1c14f4a03c6ebf5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32df68be9beb2771a0705c30f4e18574 = $(`<div id="html_32df68be9beb2771a0705c30f4e18574" style="width: 100.0%; height: 100.0%;">ГРОДНЕНСКАЯ область,Щучинский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_d9693d84a440c52c1c14f4a03c6ebf5d.setContent(html_32df68be9beb2771a0705c30f4e18574);
+            
+        
+
+        circle_marker_58b977658b1b1d5099f964291a53ff34.bindPopup(popup_d9693d84a440c52c1c14f4a03c6ebf5d)
+        ;
+
+        
+    
+    
+            var circle_marker_701bc5b9a0285e87ceb417d88b30c8da = L.circleMarker(
+                [53.7863155, 29.119835512407576],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_b1cd9f9b30539d82ff8a9acbcdb79647 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fa5d09e644104457adc04285965cd02 = $(`<div id="html_5fa5d09e644104457adc04285965cd02" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Березинский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_b1cd9f9b30539d82ff8a9acbcdb79647.setContent(html_5fa5d09e644104457adc04285965cd02);
+            
+        
+
+        circle_marker_701bc5b9a0285e87ceb417d88b30c8da.bindPopup(popup_b1cd9f9b30539d82ff8a9acbcdb79647)
+        ;
+
+        
+    
+    
+            var circle_marker_9b7eb52bfbde0d7c926ac3c7be2352e3 = L.circleMarker(
+                [53.7863155, 29.119835512407576],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_0c8e343d7056f90de53a070f05a69197 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8273059eb22bf30fcd12e77cf15f50b7 = $(`<div id="html_8273059eb22bf30fcd12e77cf15f50b7" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Березинский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_0c8e343d7056f90de53a070f05a69197.setContent(html_8273059eb22bf30fcd12e77cf15f50b7);
+            
+        
+
+        circle_marker_9b7eb52bfbde0d7c926ac3c7be2352e3.bindPopup(popup_0c8e343d7056f90de53a070f05a69197)
+        ;
+
+        
+    
+    
+            var circle_marker_f0a6bf12565e1a247a3e964c3ed84ac9 = L.circleMarker(
+                [54.31369905, 28.534943076119713],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_29061b534bbca13a72b118082e91fd05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0978f00d62242e72694da895140afab2 = $(`<div id="html_0978f00d62242e72694da895140afab2" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Борисовский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_29061b534bbca13a72b118082e91fd05.setContent(html_0978f00d62242e72694da895140afab2);
+            
+        
+
+        circle_marker_f0a6bf12565e1a247a3e964c3ed84ac9.bindPopup(popup_29061b534bbca13a72b118082e91fd05)
+        ;
+
+        
+    
+    
+            var circle_marker_3f765b68a594b86a12b17e8c1952c669 = L.circleMarker(
+                [54.504203, 27.071938358916583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_0162c103da2682c0de59edaecabede4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b0845ae72ad6e0d4d8907ae8d3a38d4 = $(`<div id="html_3b0845ae72ad6e0d4d8907ae8d3a38d4" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Вилейский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_0162c103da2682c0de59edaecabede4f.setContent(html_3b0845ae72ad6e0d4d8907ae8d3a38d4);
+            
+        
+
+        circle_marker_3f765b68a594b86a12b17e8c1952c669.bindPopup(popup_0162c103da2682c0de59edaecabede4f)
+        ;
+
+        
+    
+    
+            var circle_marker_4afe4bb7230ea2da86750f9f4c324d0b = L.circleMarker(
+                [54.05346175, 26.74558992842285],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_89ebb78842a73f4b134da87dd2ceb2f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_264d47a6ee590cc1a893dcefba2885bb = $(`<div id="html_264d47a6ee590cc1a893dcefba2885bb" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Воложинский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_89ebb78842a73f4b134da87dd2ceb2f2.setContent(html_264d47a6ee590cc1a893dcefba2885bb);
+            
+        
+
+        circle_marker_4afe4bb7230ea2da86750f9f4c324d0b.bindPopup(popup_89ebb78842a73f4b134da87dd2ceb2f2)
+        ;
+
+        
+    
+    
+            var circle_marker_0b0cce4750ef1f3fb7a1cc7fc870f024 = L.circleMarker(
+                [53.71560755, 27.15433539001014],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_aaa4c9f854a084a72b79437b2e1100e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43d1ff99e37c6fcec3ec7c4aac81cd30 = $(`<div id="html_43d1ff99e37c6fcec3ec7c4aac81cd30" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Дзержинский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_aaa4c9f854a084a72b79437b2e1100e3.setContent(html_43d1ff99e37c6fcec3ec7c4aac81cd30);
+            
+        
+
+        circle_marker_0b0cce4750ef1f3fb7a1cc7fc870f024.bindPopup(popup_aaa4c9f854a084a72b79437b2e1100e3)
+        ;
+
+        
+    
+    
+            var circle_marker_b6ba4dcf5a203725d92b8e8b3951ed77 = L.circleMarker(
+                [53.0944249, 27.06501231597776],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_186344df70addc7218e5d1461f13a255 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb4a7e2f57170df8d3bc8b2e4556253b = $(`<div id="html_eb4a7e2f57170df8d3bc8b2e4556253b" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Копыльский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_186344df70addc7218e5d1461f13a255.setContent(html_eb4a7e2f57170df8d3bc8b2e4556253b);
+            
+        
+
+        circle_marker_b6ba4dcf5a203725d92b8e8b3951ed77.bindPopup(popup_186344df70addc7218e5d1461f13a255)
+        ;
+
+        
+    
+    
+            var circle_marker_eb11d196721f19118b70110743dc1dd2 = L.circleMarker(
+                [53.0944249, 27.06501231597776],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_935d589c39f38074fd045a1c719481bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f989623951927551026d56898b9c18b7 = $(`<div id="html_f989623951927551026d56898b9c18b7" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Копыльский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_935d589c39f38074fd045a1c719481bc.setContent(html_f989623951927551026d56898b9c18b7);
+            
+        
+
+        circle_marker_eb11d196721f19118b70110743dc1dd2.bindPopup(popup_935d589c39f38074fd045a1c719481bc)
+        ;
+
+        
+    
+    
+            var circle_marker_7ffc4e5f1a843b1f1865907cf4f64fa3 = L.circleMarker(
+                [54.324122700000004, 29.121623550725296],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_b2f2f8b8c87de5c61bf11e45a24370d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8dbf09f673c458b20b7cc10abd48781 = $(`<div id="html_b8dbf09f673c458b20b7cc10abd48781" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Крупский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_b2f2f8b8c87de5c61bf11e45a24370d0.setContent(html_b8dbf09f673c458b20b7cc10abd48781);
+            
+        
+
+        circle_marker_7ffc4e5f1a843b1f1865907cf4f64fa3.bindPopup(popup_b2f2f8b8c87de5c61bf11e45a24370d0)
+        ;
+
+        
+    
+    
+            var circle_marker_787e8755f541a5403c68303d971c59d6 = L.circleMarker(
+                [52.73916125, 28.041338142917738],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_78fd5b17c5da3193f46cf416ad42454f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8f3d36ac955b47dada1050c2827ef3e = $(`<div id="html_f8f3d36ac955b47dada1050c2827ef3e" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Любанский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_78fd5b17c5da3193f46cf416ad42454f.setContent(html_f8f3d36ac955b47dada1050c2827ef3e);
+            
+        
+
+        circle_marker_787e8755f541a5403c68303d971c59d6.bindPopup(popup_78fd5b17c5da3193f46cf416ad42454f)
+        ;
+
+        
+    
+    
+            var circle_marker_2ed57e110294e6fe1fbc2f315a7fc2e5 = L.circleMarker(
+                [53.93906825, 27.23088772951521],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_4df2a82256011fe7eaedb8520f9feef0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bda3255abb4d0e074b85ac578f4c84e3 = $(`<div id="html_bda3255abb4d0e074b85ac578f4c84e3" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Минский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_4df2a82256011fe7eaedb8520f9feef0.setContent(html_bda3255abb4d0e074b85ac578f4c84e3);
+            
+        
+
+        circle_marker_2ed57e110294e6fe1fbc2f315a7fc2e5.bindPopup(popup_4df2a82256011fe7eaedb8520f9feef0)
+        ;
+
+        
+    
+    
+            var circle_marker_5f912273f07be561a971a3b334e5b3d1 = L.circleMarker(
+                [54.2516774, 26.922255104554974],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_2d69a659fbed8166ea7276414f8eff30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcd1974515cbcb88412bab805319652f = $(`<div id="html_bcd1974515cbcb88412bab805319652f" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Молодечненский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_2d69a659fbed8166ea7276414f8eff30.setContent(html_bcd1974515cbcb88412bab805319652f);
+            
+        
+
+        circle_marker_5f912273f07be561a971a3b334e5b3d1.bindPopup(popup_2d69a659fbed8166ea7276414f8eff30)
+        ;
+
+        
+    
+    
+            var circle_marker_8616b79d1716cd2f53a2dc8482c21e03 = L.circleMarker(
+                [53.2407476, 26.60307309686547],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_992156457124199fa9169993c27ad00a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68bcfc533244a8fcf61e9e17c4865663 = $(`<div id="html_68bcfc533244a8fcf61e9e17c4865663" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Несвижский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_992156457124199fa9169993c27ad00a.setContent(html_68bcfc533244a8fcf61e9e17c4865663);
+            
+        
+
+        circle_marker_8616b79d1716cd2f53a2dc8482c21e03.bindPopup(popup_992156457124199fa9169993c27ad00a)
+        ;
+
+        
+    
+    
+            var circle_marker_eb729674be8ac5fadd1e62acde723e8f = L.circleMarker(
+                [53.99857235, 28.17530963200179],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_a351ede152e4e8105b7fbd4141ff51d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a1cb59ae34de3a7a098aadf9c275f57 = $(`<div id="html_6a1cb59ae34de3a7a098aadf9c275f57" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Смолевичский район<br>                 3<br>                 3<br></div>`)[0];
+                popup_a351ede152e4e8105b7fbd4141ff51d8.setContent(html_6a1cb59ae34de3a7a098aadf9c275f57);
+            
+        
+
+        circle_marker_eb729674be8ac5fadd1e62acde723e8f.bindPopup(popup_a351ede152e4e8105b7fbd4141ff51d8)
+        ;
+
+        
+    
+    
+            var circle_marker_3d73cc2fd490b322cd29122fc6617416 = L.circleMarker(
+                [53.99857235, 28.17530963200179],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_75511450379580951fe06e4d8ac0965a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bc55d7fe16787a8b74a8e68bc5e508e = $(`<div id="html_6bc55d7fe16787a8b74a8e68bc5e508e" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Смолевичский район<br>                 3<br>                 3<br></div>`)[0];
+                popup_75511450379580951fe06e4d8ac0965a.setContent(html_6bc55d7fe16787a8b74a8e68bc5e508e);
+            
+        
+
+        circle_marker_3d73cc2fd490b322cd29122fc6617416.bindPopup(popup_75511450379580951fe06e4d8ac0965a)
+        ;
+
+        
+    
+    
+            var circle_marker_9d036d9cb22e610769fb565910bb817d = L.circleMarker(
+                [52.67255295, 27.408892925763716],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_27e8b4a18ce02eb6a7e129adf5dd8f5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9e90e6c001080e8207b70cafaefcacd = $(`<div id="html_e9e90e6c001080e8207b70cafaefcacd" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Солигорский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_27e8b4a18ce02eb6a7e129adf5dd8f5f.setContent(html_e9e90e6c001080e8207b70cafaefcacd);
+            
+        
+
+        circle_marker_9d036d9cb22e610769fb565910bb817d.bindPopup(popup_27e8b4a18ce02eb6a7e129adf5dd8f5f)
+        ;
+
+        
+    
+    
+            var circle_marker_ad194b299bca89f78089751cc795d6c8 = L.circleMarker(
+                [52.67255295, 27.408892925763716],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_317a0bdc93dff9301fb97c0e2fc9f8bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c913d2e33d5c9002f0bee4c491787be4 = $(`<div id="html_c913d2e33d5c9002f0bee4c491787be4" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Солигорский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_317a0bdc93dff9301fb97c0e2fc9f8bc.setContent(html_c913d2e33d5c9002f0bee4c491787be4);
+            
+        
+
+        circle_marker_ad194b299bca89f78089751cc795d6c8.bindPopup(popup_317a0bdc93dff9301fb97c0e2fc9f8bc)
+        ;
+
+        
+    
+    
+            var circle_marker_12935cd4aab02d1f45cc6ced0de6afa3 = L.circleMarker(
+                [53.0547786, 28.24573627374137],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_5911509db00e11174692a0f00c5397d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a667a1fa289f42ecfbe6fffaa248aa93 = $(`<div id="html_a667a1fa289f42ecfbe6fffaa248aa93" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Стародорожский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_5911509db00e11174692a0f00c5397d2.setContent(html_a667a1fa289f42ecfbe6fffaa248aa93);
+            
+        
+
+        circle_marker_12935cd4aab02d1f45cc6ced0de6afa3.bindPopup(popup_5911509db00e11174692a0f00c5397d2)
+        ;
+
+        
+    
+    
+            var circle_marker_2eb558819c09b3bca235465082d3a6f7 = L.circleMarker(
+                [53.6090667, 26.679384794094496],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_55df04985d55b944065e56e3bbdeed08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a26c472e3c8eaf0e325408282464f3e1 = $(`<div id="html_a26c472e3c8eaf0e325408282464f3e1" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Столбцовский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_55df04985d55b944065e56e3bbdeed08.setContent(html_a26c472e3c8eaf0e325408282464f3e1);
+            
+        
+
+        circle_marker_2eb558819c09b3bca235465082d3a6f7.bindPopup(popup_55df04985d55b944065e56e3bbdeed08)
+        ;
+
+        
+    
+    
+            var circle_marker_0ee5466bf52e34576874f63c2d5a5168 = L.circleMarker(
+                [53.6090667, 26.679384794094496],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_ed82ac25e39718c93d3f2e811cce149f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fd82e9ba7f015aa5ef3b89df84ff973 = $(`<div id="html_8fd82e9ba7f015aa5ef3b89df84ff973" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Столбцовский район<br>                 1<br>                 1<br></div>`)[0];
+                popup_ed82ac25e39718c93d3f2e811cce149f.setContent(html_8fd82e9ba7f015aa5ef3b89df84ff973);
+            
+        
+
+        circle_marker_0ee5466bf52e34576874f63c2d5a5168.bindPopup(popup_ed82ac25e39718c93d3f2e811cce149f)
+        ;
+
+        
+    
+    
+            var circle_marker_5749c8e07267c543d2ba4858d84d1271 = L.circleMarker(
+                [53.4855321, 27.246246881272896],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_2103a6c2edc8c894198b01601dab6292 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_462e700be26c370c913403318c794453 = $(`<div id="html_462e700be26c370c913403318c794453" style="width: 100.0%; height: 100.0%;">МИНСКАЯ область,Узденский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_2103a6c2edc8c894198b01601dab6292.setContent(html_462e700be26c370c913403318c794453);
+            
+        
+
+        circle_marker_5749c8e07267c543d2ba4858d84d1271.bindPopup(popup_2103a6c2edc8c894198b01601dab6292)
+        ;
+
+        
+    
+    
+            var circle_marker_3a4c593d644de4d1de0c7d7e504585ff = L.circleMarker(
+                [53.0731726, 29.02261724127566],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_d854e70ac159e9b986b5344e091487d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_feb90ae90fe0d63ad9c01317869a4bfa = $(`<div id="html_feb90ae90fe0d63ad9c01317869a4bfa" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Бобруйский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_d854e70ac159e9b986b5344e091487d0.setContent(html_feb90ae90fe0d63ad9c01317869a4bfa);
+            
+        
+
+        circle_marker_3a4c593d644de4d1de0c7d7e504585ff.bindPopup(popup_d854e70ac159e9b986b5344e091487d0)
+        ;
+
+        
+    
+    
+            var circle_marker_571218c98f1821f67aea94e040ac4b24 = L.circleMarker(
+                [53.46767105, 30.25947182092577],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_3f545d8cd5bc034bea1e53b58d602ed9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26de1264596ce663eb63d3997544aacd = $(`<div id="html_26de1264596ce663eb63d3997544aacd" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Быховский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_3f545d8cd5bc034bea1e53b58d602ed9.setContent(html_26de1264596ce663eb63d3997544aacd);
+            
+        
+
+        circle_marker_571218c98f1821f67aea94e040ac4b24.bindPopup(popup_3f545d8cd5bc034bea1e53b58d602ed9)
+        ;
+
+        
+    
+    
+            var circle_marker_565f78c719c49727581d4a713a29b820 = L.circleMarker(
+                [52.9183955, 28.70698072193904],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_8f7ec924df94e461ce67af373b47bfe3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e270ad7500b5416bcfca190fae5d9fce = $(`<div id="html_e270ad7500b5416bcfca190fae5d9fce" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Глусский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_8f7ec924df94e461ce67af373b47bfe3.setContent(html_e270ad7500b5416bcfca190fae5d9fce);
+            
+        
+
+        circle_marker_565f78c719c49727581d4a713a29b820.bindPopup(popup_8f7ec924df94e461ce67af373b47bfe3)
+        ;
+
+        
+    
+    
+            var circle_marker_94997231bc3c1915a673bf49896d3cec = L.circleMarker(
+                [54.29694655, 30.9383371303825],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_2c90c286e285780fba3b99ce9147f9cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_837e3bcd056b8e600ae677d8fe88a7be = $(`<div id="html_837e3bcd056b8e600ae677d8fe88a7be" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Горецкий район<br>                 0<br>                 0<br></div>`)[0];
+                popup_2c90c286e285780fba3b99ce9147f9cd.setContent(html_837e3bcd056b8e600ae677d8fe88a7be);
+            
+        
+
+        circle_marker_94997231bc3c1915a673bf49896d3cec.bindPopup(popup_2c90c286e285780fba3b99ce9147f9cd)
+        ;
+
+        
+    
+    
+            var circle_marker_ad4163d3323f1a41ff25675502a0cae8 = L.circleMarker(
+                [54.067799449999995, 30.89783529617508],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_bfc5b2a071e88211214771da62434e13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5196f92ee772bfc8b1a8d413b5ed15e9 = $(`<div id="html_5196f92ee772bfc8b1a8d413b5ed15e9" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Дрибинский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_bfc5b2a071e88211214771da62434e13.setContent(html_5196f92ee772bfc8b1a8d413b5ed15e9);
+            
+        
+
+        circle_marker_ad4163d3323f1a41ff25675502a0cae8.bindPopup(popup_bfc5b2a071e88211214771da62434e13)
+        ;
+
+        
+    
+    
+            var circle_marker_ea7faef563e5e204d1e55f981095830e = L.circleMarker(
+                [53.34311795, 29.569515588467517],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_3b4eebcab5a7247aead0a314793a2e0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acea19aa40799e4c1bfcd28970fbc609 = $(`<div id="html_acea19aa40799e4c1bfcd28970fbc609" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Кировский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_3b4eebcab5a7247aead0a314793a2e0f.setContent(html_acea19aa40799e4c1bfcd28970fbc609);
+            
+        
+
+        circle_marker_ea7faef563e5e204d1e55f981095830e.bindPopup(popup_3b4eebcab5a7247aead0a314793a2e0f)
+        ;
+
+        
+    
+    
+            var circle_marker_fe45e6ada451e8f113eb463c155371e3 = L.circleMarker(
+                [53.34311795, 29.569515588467517],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_c4cc19ba37de8048f20809c65002a949 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acb6331c63134e55181b243bcaa391f3 = $(`<div id="html_acb6331c63134e55181b243bcaa391f3" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Кировский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_c4cc19ba37de8048f20809c65002a949.setContent(html_acb6331c63134e55181b243bcaa391f3);
+            
+        
+
+        circle_marker_fe45e6ada451e8f113eb463c155371e3.bindPopup(popup_c4cc19ba37de8048f20809c65002a949)
+        ;
+
+        
+    
+    
+            var circle_marker_7712b6978b4674fdff76099fd3b67f56 = L.circleMarker(
+                [53.61614295, 32.05036579675087],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_91d31294e048396c8fdb0cdc7b395b06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_642ec15a8cc23b77df220d40e58bfaf3 = $(`<div id="html_642ec15a8cc23b77df220d40e58bfaf3" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Климовичский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_91d31294e048396c8fdb0cdc7b395b06.setContent(html_642ec15a8cc23b77df220d40e58bfaf3);
+            
+        
+
+        circle_marker_7712b6978b4674fdff76099fd3b67f56.bindPopup(popup_91d31294e048396c8fdb0cdc7b395b06)
+        ;
+
+        
+    
+    
+            var circle_marker_4feab82c0e22e80e1b73c1a5ed0551bb = L.circleMarker(
+                [53.51677135, 29.2998839161929],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_10dc1f938922177b1dfc9162db7f2218 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_454e969e765698aab001168ced6a2a93 = $(`<div id="html_454e969e765698aab001168ced6a2a93" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Кличевский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_10dc1f938922177b1dfc9162db7f2218.setContent(html_454e969e765698aab001168ced6a2a93);
+            
+        
+
+        circle_marker_4feab82c0e22e80e1b73c1a5ed0551bb.bindPopup(popup_10dc1f938922177b1dfc9162db7f2218)
+        ;
+
+        
+    
+    
+            var circle_marker_964170bd7ea4035b410d12af1c7d1f85 = L.circleMarker(
+                [53.51677135, 29.2998839161929],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_f0b667813478b10a203d4b49d6e8c4f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e44f485187028f0a5f86b6b7e3a4ca7 = $(`<div id="html_5e44f485187028f0a5f86b6b7e3a4ca7" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Кличевский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_f0b667813478b10a203d4b49d6e8c4f9.setContent(html_5e44f485187028f0a5f86b6b7e3a4ca7);
+            
+        
+
+        circle_marker_964170bd7ea4035b410d12af1c7d1f85.bindPopup(popup_f0b667813478b10a203d4b49d6e8c4f9)
+        ;
+
+        
+    
+    
+            var circle_marker_ba8871e2d25e049989139140c35cf5c6 = L.circleMarker(
+                [53.2814039, 32.01067538060562],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_5a3a308b2f808b72ed5acb7af867ae90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9942c2343ffadb3c466f4a56f62865c = $(`<div id="html_a9942c2343ffadb3c466f4a56f62865c" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Костюковичский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_5a3a308b2f808b72ed5acb7af867ae90.setContent(html_a9942c2343ffadb3c466f4a56f62865c);
+            
+        
+
+        circle_marker_ba8871e2d25e049989139140c35cf5c6.bindPopup(popup_5a3a308b2f808b72ed5acb7af867ae90)
+        ;
+
+        
+    
+    
+            var circle_marker_480fa530a23cf4fb9d66af398df8af9a = L.circleMarker(
+                [53.2822057, 31.38823338240033],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_b557cef90953b7a591807af79ad8eded = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63fe8826db4bbb605fa37f8ce3398535 = $(`<div id="html_63fe8826db4bbb605fa37f8ce3398535" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Краснопольский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_b557cef90953b7a591807af79ad8eded.setContent(html_63fe8826db4bbb605fa37f8ce3398535);
+            
+        
+
+        circle_marker_480fa530a23cf4fb9d66af398df8af9a.bindPopup(popup_b557cef90953b7a591807af79ad8eded)
+        ;
+
+        
+    
+    
+            var circle_marker_4642d52a473fdd3333cc84f9ffc26f67 = L.circleMarker(
+                [53.7409896, 31.62014262430366],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_9fad7a9c1d43c73bf3b8b064d9d7f298 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0846f8b1a7241a02a270cd3a412f5444 = $(`<div id="html_0846f8b1a7241a02a270cd3a412f5444" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Кричевский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_9fad7a9c1d43c73bf3b8b064d9d7f298.setContent(html_0846f8b1a7241a02a270cd3a412f5444);
+            
+        
+
+        circle_marker_4642d52a473fdd3333cc84f9ffc26f67.bindPopup(popup_9fad7a9c1d43c73bf3b8b064d9d7f298)
+        ;
+
+        
+    
+    
+            var circle_marker_9e9303d5abaee019ec084d8c9cb8ec76 = L.circleMarker(
+                [53.850655849999995, 30.055773308640287],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_028e4f1f8802e9e25becc38155b6de6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bac6e38dcfcf6fa0703b2b38a18a018d = $(`<div id="html_bac6e38dcfcf6fa0703b2b38a18a018d" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Могилевский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_028e4f1f8802e9e25becc38155b6de6c.setContent(html_bac6e38dcfcf6fa0703b2b38a18a018d);
+            
+        
+
+        circle_marker_9e9303d5abaee019ec084d8c9cb8ec76.bindPopup(popup_028e4f1f8802e9e25becc38155b6de6c)
+        ;
+
+        
+    
+    
+            var circle_marker_5e8a9f7f026ad7cb0edeb39cfafa4b91 = L.circleMarker(
+                [53.850655849999995, 30.055773308640287],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_0d2e0683320f8f41e405afc1bcc4b213 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dad6d5839bcff948b2397d55ba1c7d5f = $(`<div id="html_dad6d5839bcff948b2397d55ba1c7d5f" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Могилевский район<br>                 2<br>                 2<br></div>`)[0];
+                popup_0d2e0683320f8f41e405afc1bcc4b213.setContent(html_dad6d5839bcff948b2397d55ba1c7d5f);
+            
+        
+
+        circle_marker_5e8a9f7f026ad7cb0edeb39cfafa4b91.bindPopup(popup_0d2e0683320f8f41e405afc1bcc4b213)
+        ;
+
+        
+    
+    
+            var circle_marker_bc5a0135f5348b70d4739f237bef6f90 = L.circleMarker(
+                [54.027710299999995, 31.56850342205152],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_c971fc3005fa44473920e4ada844adc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cb316a72a39cf40815393331206e088 = $(`<div id="html_0cb316a72a39cf40815393331206e088" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Мстиславский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_c971fc3005fa44473920e4ada844adc9.setContent(html_0cb316a72a39cf40815393331206e088);
+            
+        
+
+        circle_marker_bc5a0135f5348b70d4739f237bef6f90.bindPopup(popup_c971fc3005fa44473920e4ada844adc9)
+        ;
+
+        
+    
+    
+            var circle_marker_f6adb39093693911371a763dbe28e809 = L.circleMarker(
+                [53.35945295, 28.687695801549438],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_dcc9a408297a8ce4b60666b04dbf8797 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62a7dc4e29458c7f80e62af18b06dbe8 = $(`<div id="html_62a7dc4e29458c7f80e62af18b06dbe8" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Осиповичский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_dcc9a408297a8ce4b60666b04dbf8797.setContent(html_62a7dc4e29458c7f80e62af18b06dbe8);
+            
+        
+
+        circle_marker_f6adb39093693911371a763dbe28e809.bindPopup(popup_dcc9a408297a8ce4b60666b04dbf8797)
+        ;
+
+        
+    
+    
+            var circle_marker_f7ec558e8cdf49310f9c6928c7166f08 = L.circleMarker(
+                [53.477066449999995, 30.941025712500007],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_dffe266b8ea78e60e74ab6a5a67a1759 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7ab5d1ca27b7149b385ce7f195153e3 = $(`<div id="html_d7ab5d1ca27b7149b385ce7f195153e3" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Славгородский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_dffe266b8ea78e60e74ab6a5a67a1759.setContent(html_d7ab5d1ca27b7149b385ce7f195153e3);
+            
+        
+
+        circle_marker_f7ec558e8cdf49310f9c6928c7166f08.bindPopup(popup_dffe266b8ea78e60e74ab6a5a67a1759)
+        ;
+
+        
+    
+    
+            var circle_marker_6678bd8d78214c67192c80e3a98f702b = L.circleMarker(
+                [53.3839027, 32.50713555978009],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_ac92a08977c9b53c2540ea4464ebc599 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23bad75d39da758b2ed9a022a38f0a18 = $(`<div id="html_23bad75d39da758b2ed9a022a38f0a18" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Хотимский район<br>                 0<br>                 0<br></div>`)[0];
+                popup_ac92a08977c9b53c2540ea4464ebc599.setContent(html_23bad75d39da758b2ed9a022a38f0a18);
+            
+        
+
+        circle_marker_6678bd8d78214c67192c80e3a98f702b.bindPopup(popup_ac92a08977c9b53c2540ea4464ebc599)
+        ;
+
+        
+    
+    
+            var circle_marker_04025695c10107d939e2c59990412702 = L.circleMarker(
+                [53.791556299999996, 30.909400934272586],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_a827cf48351cf7f92d31f1210f4902b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1afad5791827c4a1f2bf9e7576d34eb2 = $(`<div id="html_1afad5791827c4a1f2bf9e7576d34eb2" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Чаусский район<br>                 3<br>                 3<br></div>`)[0];
+                popup_a827cf48351cf7f92d31f1210f4902b4.setContent(html_1afad5791827c4a1f2bf9e7576d34eb2);
+            
+        
+
+        circle_marker_04025695c10107d939e2c59990412702.bindPopup(popup_a827cf48351cf7f92d31f1210f4902b4)
+        ;
+
+        
+    
+    
+            var circle_marker_5f09557f35b29094d5406247da2a72c7 = L.circleMarker(
+                [53.791556299999996, 30.909400934272586],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_9edf1651ce19f193310e34d27f8244c9);
+        
+    
+        var popup_ddcd1dc31af7ffaa1790a6d5e6397133 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e09a8d894133eba8913188ab95330c5f = $(`<div id="html_e09a8d894133eba8913188ab95330c5f" style="width: 100.0%; height: 100.0%;">МОГИЛЕВСКАЯ область,Чаусский район<br>                 3<br>                 3<br></div>`)[0];
+                popup_ddcd1dc31af7ffaa1790a6d5e6397133.setContent(html_e09a8d894133eba8913188ab95330c5f);
+            
+        
+
+        circle_marker_5f09557f35b29094d5406247da2a72c7.bindPopup(popup_ddcd1dc31af7ffaa1790a6d5e6397133)
+        ;
+
+        
+    
+</script>
+</html>
