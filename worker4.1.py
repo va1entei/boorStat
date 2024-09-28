@@ -178,9 +178,10 @@ for i in range(3):
     dataToMap(boorDict2,allBoorDict[list(allBoorDict.keys())[i*2]],allBoorDict[list(allBoorDict.keys())[i*2+1]],bot_token,bot_chatID,cdvList[i],fileDownloadName,list(allBoorDict.keys())[i*2].split('_')[1])
 
 from glob import glob
-prevName = sorted(glob('./elk_deer_roe/*.pkl', recursive=True), key=os.path.getsize)[0]
+prevName = sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getsize)[0]
+print(prevName)
 prevDict = readSaveDict(prevName)
-
+print(prevDict.keys())
 deltaDict = dict()
 for i0 in range(3):
     deltaDict[list(allBoorDict.keys())[i0*2+1]]=dict()
