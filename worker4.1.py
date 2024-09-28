@@ -175,6 +175,19 @@ allBoorDict={'boorDict0_elk':boorDict0_elk, 'boorDict1_elk':boorDict1_elk, 'boor
 
 cdvList=[2,2,5]
 for i in range(3):
-    dataToMap(boorDict2,allBoorDict[list(allBoorDict.keys())[i*2]],allBoorDict[list(allBoorDict.keys())[i*2]],bot_token,bot_chatID,cdvList[i],fileDownloadName,list(allBoorDict.keys())[i*2].split('_')[1])
+    dataToMap(boorDict2,allBoorDict[list(allBoorDict.keys())[i*2]],allBoorDict[list(allBoorDict.keys())[i*2+1]],bot_token,bot_chatID,cdvList[i],fileDownloadName,list(allBoorDict.keys())[i*2].split('_')[1])
 
+from glob import glob
+prevName = sorted(glob('./elk_deer_roe/*.pkl', recursive=True), key=os.path.getsize)[0]
+prevDict = readSaveDict(prevName)
+
+deltaDict = dict()
+for i0 in range(3):
+    deltaDict[list(allBoorDict.keys())[i0*2+1]]=dict()
+    for i1 in prevDict[list(allBoorDict.keys())[i0*2+1]].keys():
+        deltaDict[list(allBoorDict.keys())[i0*2+1]][i1]=prevDict[list(allBoorDict.keys())[i0*2+1]][i1]-allBoorDict[list(allBoorDict.keys())[i0*2+1]][i1]
+#cdvList=[0.5,0.5,0.5]
+cdvList=[1,1,1]
+for i in range(3):
+    dataToMap(boorDict2,deltaDict[list(deltaDict.keys())[i]],deltaDict[list(deltaDict.keys())[i]],bot_token,bot_chatID,cdvList[i],fileDownloadName,list(deltaDict.keys())[i].split('_')[1]+'_prev')
 saveDict('./elk_deer_roe/allBoorDict_'+strDate+'.pkl',allBoorDict)
