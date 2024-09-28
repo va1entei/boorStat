@@ -134,7 +134,7 @@ def dataToMap(boorDict2P,boorDict0_elkP,boorDict1_elkP,bot_tokenP,bot_chatIDP,cd
                                 str(int(float(boorDict0_elkP[i]))),
                                 str(int(float(boorDict1_elkP[i])))
                                 )
-        if int(float(boorDict1_elkP[i])*cdvP) ==0 or int(float(boorDict0_elkP[i])*cdv)/int(float(boorDict1_elkP[i])*cdv)>2:
+        if int(float(boorDict1_elkP[i])*cdvP) ==0 or int(float(boorDict0_elkP[i])*cdvP)/int(float(boorDict1_elkP[i])*cdvP)>2:
             if int(float(boorDict0_elkP[i])*cdvP) ==0:
                 folium.CircleMarker(location = boorDict2P[i], radius=0,popup= popup_text, color='black', fill =False).add_to(world_map)
             else:
