@@ -186,7 +186,12 @@ deltaDict = dict()
 for i0 in range(3):
     deltaDict[list(allBoorDict.keys())[i0*2+1]]=dict()
     for i1 in prevDict[list(allBoorDict.keys())[i0*2+1]].keys():
-        deltaDict[list(allBoorDict.keys())[i0*2+1]][i1]=prevDict[list(allBoorDict.keys())[i0*2+1]][i1]-allBoorDict[list(allBoorDict.keys())[i0*2+1]][i1]
+        try:
+            deltaDict[list(allBoorDict.keys())[i0*2+1]][i1]=prevDict[list(allBoorDict.keys())[i0*2+1]][i1]-allBoorDict[list(allBoorDict.keys())[i0*2+1]][i1]
+        except:
+            print(i0)
+            print(i1)
+            continue
 #cdvList=[0.5,0.5,0.5]
 cdvList=[1,1,1]
 for i in range(3):
