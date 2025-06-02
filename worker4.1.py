@@ -69,13 +69,13 @@ for i in p.tables:
                 try:
                     boorDict0_deer[tsKey] = 0                        
                     boorDict0_elk[tsKey] = 0                        
-                    boorDict0_roe[tsKey] = int(j[2].split(' ')[1])
+                    boorDict0_roe[tsKey] = int(j[1].split(' ')[1])
                 except:
                     boorDict0_roe[tsKey] = 0
                 try:
                     boorDict1_deer[tsKey] = 0                        
                     boorDict1_elk[tsKey] = 0                        
-                    boorDict1_roe[tsKey] = int(j[3].split(' ')[1])
+                    boorDict1_roe[tsKey] = int(j[2].split(' ')[1])
                 except:
                     boorDict1_roe[tsKey] = 0
                 break
