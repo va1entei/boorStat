@@ -57,49 +57,28 @@ boorDict1_roe = dict()
 boorDict0_roe = dict()
 
 for i in p.tables:
-    tsKey = 'start'
     for j in i:
-        if tsKey == 'start':
-        
-            for l in boorDict2.keys():
-                    try:
-                        tmpSplit = j[0].split(' ')[1][:-2]
-                    except:
-                        print(j)
-                        continue
-                    if len(tmpSplit)<4: #олень бобр
-                        continue
-                    if tmpSplit in l :
-                        tsKey = l
-                        try:
-                            boorDict0_elk[tsKey] = int(j[2].split(' ')[1])
-                        except:
-                            boorDict0_elk[tsKey] = 0
-                        try:
-                            boorDict1_elk[tsKey] = int(j[3].split(' ')[1])
-                        except:
-                            boorDict1_elk[tsKey] = 0
-                        break
-        else:
-            if j[0] == '\\r\\n олень \\r\\n':
+        for l in boorDict2.keys():
+            try:
+                tmpSplit = j[0].split(' ')[1][:-2]
+            except:
+                print(j)
+                continue
+            if tmpSplit in l :
+                tsKey = l
                 try:
-                    boorDict0_deer[tsKey] = int(j[1].split(' ')[1])
-                except:
-                    boorDict0_deer[tsKey] = 0
-                try:
-                    boorDict1_deer[tsKey] = int(j[2].split(' ')[1])
-                except:
-                    boorDict1_deer[tsKey] = 0
-            elif j[0] ==  '\\r\\n косуля \\r\\n':
-                try:
-                    boorDict0_roe[tsKey] = int(j[1].split(' ')[1])
+                    boorDict0_deer[tsKey] = 0                        
+                    boorDict0_elk[tsKey] = 0                        
+                    boorDict0_roe[tsKey] = int(j[2].split(' ')[1])
                 except:
                     boorDict0_roe[tsKey] = 0
                 try:
-                    boorDict1_roe[tsKey] = int(j[2].split(' ')[1])
+                    boorDict1_deer[tsKey] = 0                        
+                    boorDict1_elk[tsKey] = 0                        
+                    boorDict1_roe[tsKey] = int(j[3].split(' ')[1])
                 except:
                     boorDict1_roe[tsKey] = 0
-                tsKey = 'start'   
+                break
 
 
 os.system('sudo pip3 install folium')
