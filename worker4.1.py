@@ -69,18 +69,23 @@ for i in p.tables:
             if tmpSplit in l :
                 tsKey = l
                 try:
-                    boorDict0_deer[tsKey] = 0                        
-                    boorDict0_elk[tsKey] = 0                        
-                    boorDict0_roe[tsKey] = int(j[1].split(' ')[1])
+                    boorDict0_deer[tsKey] = 0
+                    boorDict0_elk[tsKey] = 0
+#                    boorDict0_roe[tsKey] = int(j[1].split(' ')[1])
+#только самцы
+                    boorDict0_roe[tsKey] = int(j[1].split(' ')[1])-int(j[2].split(' ')[1])+int(j[4].split(' ')[1])+int(j[5].split(' ')[1])
                 except:
                     boorDict0_roe[tsKey] = 0
                 try:
-                    boorDict1_deer[tsKey] = 0                        
-                    boorDict1_elk[tsKey] = 0                        
-                    boorDict1_roe[tsKey] = int(j[2].split(' ')[1])
+                    boorDict1_deer[tsKey] = 0
+                    boorDict1_elk[tsKey] = 0
+#                    boorDict1_roe[tsKey] = int(j[2].split(' ')[1])
+                    boorDict1_roe[tsKey] = int(j[4].split(' ')[1])+int(j[5].split(' ')[1])
+#только самцы
                 except:
                     boorDict1_roe[tsKey] = 0
                 break
+
 
 
 os.system('sudo pip3 install folium')
