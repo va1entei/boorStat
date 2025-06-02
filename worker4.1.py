@@ -53,8 +53,8 @@ boorDict0_elk = dict()
 boorDict1_deer = dict()
 boorDict0_deer = dict()
 
-boorDict1_roe = dict()
-boorDict0_roe = dict()
+boorDict1_roe = dict() #left
+boorDict0_roe = dict() #all
 
 for i in p.tables:
     for j in i:
@@ -63,6 +63,8 @@ for i in p.tables:
                 tmpSplit = j[0].split(' ')[1][:-2]
             except:
                 print(j)
+                continue
+            if len(tmpSplit)<4:
                 continue
             if tmpSplit in l :
                 tsKey = l
