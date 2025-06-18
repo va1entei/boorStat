@@ -164,7 +164,8 @@ for i in range(3):
     dataToMap(boorDict2,allBoorDict[list(allBoorDict.keys())[i*2]],allBoorDict[list(allBoorDict.keys())[i*2+1]],bot_token,bot_chatID,cdvList[i],fileDownloadName,list(allBoorDict.keys())[i*2].split('_')[1])
 
 from glob import glob
-prevName = sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getsize)[0]
+#prevName = sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getsize)[0]
+prevName = sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getmtime, reverse=True)[0]
 print(prevName)
 prevDict = readSaveDict(prevName)
 print(prevDict.keys())
