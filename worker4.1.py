@@ -167,6 +167,7 @@ from glob import glob
 #prevName = sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getsize)[0]
 prevName = sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getmtime, reverse=True)[0]
 print(prevName)
+print(sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getmtime, reverse=True))
 prevDict = readSaveDict(prevName)
 print(prevDict.keys())
 deltaDict = dict()
