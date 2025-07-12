@@ -165,9 +165,25 @@ for i in range(3):
 
 from glob import glob
 #prevName = sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getsize)[0]
-prevName = sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getmtime, reverse=True)[0]
+#prevName = sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getmtime, reverse=True)[0]
+
+import datetime
+def parse_item(input_str):
+    parts = input_str.split("_")
+
+    return {
+      "file_name": input_str,
+      "date": datetime.datetime.strptime(parts[3].split('.pkl')[0], '%d%m%Y')
+    }
+
+input = sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getmtime, reverse=True)
+print(input)
+mapping_files = [parse_item(input) for input in inputs]
+sorted_files = sorted(mapping_files, key=lambda x: x["date"],reverse=True)
+prevName = sorted_files[0]['file_name']
+
 print(prevName)
-print(sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getmtime, reverse=True))
+
 prevDict = readSaveDict(prevName)
 print(prevDict.keys())
 deltaDict = dict()
