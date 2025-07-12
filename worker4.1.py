@@ -176,8 +176,8 @@ def parse_item(input_str):
       "date": datetime.datetime.strptime(parts[3].split('.pkl')[0], '%d%m%Y')
     }
 
-input = sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getmtime, reverse=True)
-print(input)
+inputs = sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getmtime, reverse=True)
+print(inputs)
 mapping_files = [parse_item(input) for input in inputs]
 sorted_files = sorted(mapping_files, key=lambda x: x["date"],reverse=True)
 prevName = sorted_files[0]['file_name']
