@@ -190,6 +190,8 @@ from glob import glob
 nameFilesPKL = glob('./boorStat/elk_deer_roe/allBoorDict*.pkl')
 dateFilesPKL = [item.split('allBoorDict_')[1].split('.pkl')[0] for item in nameFilesPKL]
 sortDate = sorted(dateFilesPKL,  key=lambda x: datetime.datetime.strptime(x, '%d%m%Y'))
+print(sortDate)
+print(sortDate[-1])
 prevName = find_first_string_with_substring(nameFilesPKL,sortDate[-1])
 
 
