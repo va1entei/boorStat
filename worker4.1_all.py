@@ -170,6 +170,13 @@ def readSaveDict(nameFileP):
         return loadDict
     else:
         return dict()
+
+def find_first_string_with_substring(string_list, substring):
+    for s in string_list:
+        if substring in s:
+            return s
+    return None
+
 strDate = str(t.strftime('%d%m%Y'))
 allBoorDict={'boorDict0_elk':boorDict0_elk, 'boorDict1_elk':boorDict1_elk, 'boorDict0_deer':boorDict0_deer, 'boorDict1_deer':boorDict1_deer, 'boorDict0_roe':boorDict0_roe, 'boorDict1_roe':boorDict1_roe,}
 
@@ -177,8 +184,16 @@ cdvList=[2,2,5]
 for i in range(3):
     dataToMap(boorDict2,allBoorDict[list(allBoorDict.keys())[i*2]],allBoorDict[list(allBoorDict.keys())[i*2+1]],bot_token,bot_chatID,cdvList[i],fileDownloadName,list(allBoorDict.keys())[i*2].split('_')[1])
 
+
+
 from glob import glob
-prevName = sorted(glob('./elk_deer_roe/allBoorDict*.pkl'), key=os.path.getsize)[0]
+nameFilesPKL = glob('./boorStat/elk_deer_roe/allBoorDict*.pkl')
+dateFilesPKL = [item.split('allBoorDict_')[1].split('.pkl')[0] for item in nameFilesPKL]
+sortDate = sorted(dateFilesPKL,  key=lambda x: datetime.datetime.strptime(x, '%d%m%Y'))
+prevName = find_first_string_with_substring(nameFilesPKL,sortDate[-1])
+
+
+
 print(prevName)
 prevDict = readSaveDict(prevName)
 print(prevDict.keys())
